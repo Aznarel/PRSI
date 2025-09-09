@@ -1,1 +1,18 @@
 # PRSI
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Apuntes</title>
+</head>
+<body>
+    <h1>Bienvenido a mis apuntes</h1>
+    <p>Aquí encontrarás todos mis apuntes organizados por temas.</p>
+    <ul>
+        <li><a href="apuntes/arquitectura.html">Arquitectura de Computadores</a></li>
+        <li><a href="apuntes/sistemas-numericos.html">Sistemas Numéricos</a></li>
+        <!-- Añade más enlaces según tus apuntes -->
+    </ul>
+</body>
+</html>
