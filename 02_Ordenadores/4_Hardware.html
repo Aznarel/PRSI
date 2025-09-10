@@ -1,0 +1,1351 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/PRSI/02_Ordenadores/4_Hardware.html">
+      
+      
+        <link rel="prev" href="3_Ordenadores.html">
+      
+      
+        <link rel="next" href="5_HardwareII.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>2.2- Arquitectura de computadores - Programación, redes y sistemas informáticos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hardware" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-header__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, redes y sistemas informáticos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.2- Arquitectura de computadores
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-nav__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/LMSGI_logo32x32.png" alt="logo">
+
+    </a>
+    Programación, redes y sistemas informáticos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/PlantillaEntregaPracticas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plantilla Entrega Prácticas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT1: Tecnologías de la Información y la Comunicación (TIC)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT1: Tecnologías de la Información y la Comunicación (TIC)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_TIC/3_SociedadInformacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1- La sociedad de la información
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_TIC/4_EPA.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2- Entorno Personal de Aprendizaje (EPA)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT2: Dispositivos informáticos y sus componentes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT2: Dispositivos informáticos y sus componentes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_Ordenadores.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- Ordenadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.2- Arquitectura de computadores
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="4_Hardware.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.2- Arquitectura de computadores
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elementos-de-un-ordenador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elementos de un ordenador
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-de-computadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura de Computadores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes-de-un-ordenador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes de un ordenador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes de un ordenador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unidades-de-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unidades de almacenamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perifericos-de-entrada-y-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      Periféricos de entrada y salida
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa14-evolucion-tecnologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      AA1.4 Evolución tecnológica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_HardwareII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3- Placa bases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_Software.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4- Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT3: Propiedad Intelectual
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT3: Propiedad Intelectual
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Propiedad/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT4: Programación en Python 
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT4: Programación en Python 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Propiedad/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT5: Bases de datos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT5: Bases de datos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Propiedad/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT6: Redes de computadores
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT6: Redes de computadores
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Propiedad/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UT7: Diseño Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UT7: Diseño Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Propiedad/1_ProgramacionAula.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programación de Aula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- https://drive.google.com/file/d/13f-bDk2hKpG7msMzH5OLNJiX9-apCQaC/view -->
+
+<h1 id="hardware"><img alt="icono" src="imagenes/iconoHw.png" width="55" /> Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h1>
+<div class="admonition example">
+<p class="admonition-title">Situación de Aprendizaje</p>
+<ul>
+<li>¿De qué elementos está compuesto un ordenador? </li>
+</ul>
+</div>
+<h2 id="elementos-de-un-ordenador">Elementos de un ordenador<a class="headerlink" href="#elementos-de-un-ordenador" title="Permanent link">&para;</a></h2>
+<p>Un ordenador está constituido básicamente por <strong>hardware</strong> y <strong>software</strong>.</p>
+<p>Podemos definir el <strong>hardware</strong> como la parte física del ordenador: tanto la caja y los componentes internos (placa base, disco duro...) como los elementos conectados a él (teclado, ratón, monitor,impresora...).</p>
+<p>El <strong>software</strong> lo constituyen los programas, las instrucciones, las aplicaciones informáticas y el sistema operativo.</p>
+<p>Por último, tenemos el <strong>firmware</strong>, que sería el software específico con el que está configurado el hardware; por ejemplo, el software que configura un router o una memoria ROM. Una vez que se instala, raramente se actualiza.</p>
+<div style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3F-kuNGlNco?si=003hmhdenBkpnofG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h2 id="arquitectura-de-computadores">Arquitectura de Computadores<a class="headerlink" href="#arquitectura-de-computadores" title="Permanent link">&para;</a></h2>
+<p><strong>La arquitectura de computadores es la forma de seleccionar e interconectar componentes del hardware para que un programa ejecute la funcionalidad deseada.</strong></p>
+<p>La arquitectura de Von Neumann, aún vigente hoy en día, divide los dispositivos en los siguientes bloques:</p>
+<ul>
+<li>CPU (central processing unit) o unidad central de proceso. Se compone de:</li>
+<li>Unidad de control (UC): determina el envío de instrucciones desde la memoria hasta la CPU.</li>
+<li>Unidad aritmético-lógica (ALU, arithmetic logic unit): decodifica o interpreta las instrucciones.</li>
+<li>Memoria principal: en ella residen las instrucciones y los datos.</li>
+<li>Unidad de entrada/salida: consta de módulos que se encargan de obtener datos de los periféricos o mostrarlos al exterior.</li>
+</ul>
+<figure style="align: center;">
+    <img src="./imagenes/VonNeumann.png">
+    <figcaption>Arquitectura de Von Neumann</figcaption>
+</figure>
+
+<p>El proceso de funcionamiento es el siguiente: la unidad de control determina el envío de instrucciones desde la memoria hasta la CPU. 
+La ALU decodifica o interpreta las instrucciones mediante un conjunto de operaciones aritméticas, lógicas o de transferencia. Los resultados obtenidos son enviados a los periféricos a través de los módulos de entrada/salida.
+Estos bloques se comunican entres sí a través de unos cables o pistas en paralelo llamados buses.</p>
+<p>Por ejemplo, <strong>el proceso de imprimir un documento</strong> es el siguiente: </p>
+<ol>
+<li>la CPU señala el lugar del disco duro donde está almacenado el programa; </li>
+<li>a través del bus de datos, carga el programa en la memoria principal (RAM); </li>
+<li>la ALU decodifica o interpreta las instrucciones y guarda los nuevos datos temporalmente en la RAM; </li>
+<li>después, la CPU da la orden de imprimir, </li>
+<li>comprueba que la impresora está lista y ordena enviar los datos a través del bus de datos al periférico de salida (eneste caso, la impresora).</li>
+</ol>
+<div style="text-align: center;">
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/eDKzR06bpd8?si=WORxd-vqyGrdJNx2" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+  </iframe>
+  <h4><i>Funcionamiento máquina de Von Neumann</i></h4>
+</div>
+
+<h2 id="componentes-de-un-ordenador">Componentes de un ordenador<a class="headerlink" href="#componentes-de-un-ordenador" title="Permanent link">&para;</a></h2>
+<p>Los principales componentes de un ordenador a nivel físico son :</p>
+<ul>
+<li>Buses</li>
+<li>Unidades de almacenamiento</li>
+<li>Periféricos de entrada y salida</li>
+<li>Placa Base (Microprocesador, Chipset, Memoría, Conectores internos y puertos)</li>
+</ul>
+<h3 id="buses">Buses<a class="headerlink" href="#buses" title="Permanent link">&para;</a></h3>
+<p>Denominamos <strong>bus</strong> al conjunto de líneas de comunicación que permiten el intercambio de información entre los distintos componentes del ordenador. Existen tres tipos principales:</p>
+<figure style="float: left;">
+    <img src="./imagenes/buses.png">
+    <figcaption>Bus IDE obsoleto y bus SATA más empleado en la actualidad</figcaption>
+</figure>
+
+<ul>
+<li>
+<p><strong>Bus de datos</strong>: son los cables o pistas por los cuales circula la información. Es el único bidi- reccional, es decir, los datos entran en la CPU y salen de ella.</p>
+</li>
+<li>
+<p><strong>Bus de direcciones</strong>: La CPU utiliza las líneas del bus de direcciones para determinar a dónde debe ir el flujo de información: a la memoria o a la unidad de entrada/salida. Es uni- direccional, ya que sólo la CPU fi ja la selección.</p>
+</li>
+<li>
+<p><strong>Bus de control</strong>: Es el conjunto de líneas para las señales auxiliares de gobierno y sincronización, como el reloj, la indicación de si una operación es de lectura o de escritura, el reset,etc.</p>
+</li>
+</ul>
+<h5 id="caracteristicas-principales-de-los-buses">Características principales de los buses<a class="headerlink" href="#caracteristicas-principales-de-los-buses" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Ancho del bus:</strong> es el número de líneas o bits en paralelo que es capaz de transmitir. Cada línea es capaz de transmitir un bit a la vez; así pues, cuantas más líneas tengamos, mayor número de bits será capaz de transmitir (los microprocesadores habituales transmiten a 32 o 64 bits). </li>
+<li><strong>Frecuencia del bus:</strong> es la velocidad de transmisión. Si tenemos un microprocesador muy rápido pero el bus no es capaz de transmitir los datos a esa velocidad, no estaremos aprovechando dicha velocidad. Tenemos buses desde los 66 Mhz (megahercios) hasta los 1.333 Mhz.</li>
+</ul>
+<h3 id="unidades-de-almacenamiento">Unidades de almacenamiento<a class="headerlink" href="#unidades-de-almacenamiento" title="Permanent link">&para;</a></h3>
+<p>Las <strong>unidades de almacenamiento</strong> son los dispositivos que utilizamos para guardar información en un ordenador, como documentos, fotos, vídeos, música o programas. No debemos confundirlas con la memoria RAM o ROM, que se utilizan para trabajar de forma temporal o para almacenar instrucciones básicas del sistema.</p>
+<ul>
+<li>
+<p><strong>Disco duro (HDD):</strong> El <strong>HDD o disco duro magnético</strong> guarda los datos en platos giratorios mediante un cabezal que se mueve para leer o escribir la información. Aunque los discos duros han sido muy populares durante décadas, hoy su velocidad es menor comparada con otras tecnologías más modernas. La conexión típica de los HDD actuales es <strong>SATA III</strong>, mientras que las antiguas conexiones <strong>IDE</strong> ya no se usan.</p>
+</li>
+<li>
+<p><strong>Unidad de estado sólido (SSD)</strong>: El <strong>SSD</strong> es más moderno y rápido que el HDD porque no tiene piezas móviles. Almacena la información en chips de memoria <strong>NAND</strong>, lo que permite acceder a los datos de forma casi instantánea. Además, consume menos energía y genera menos calor. Existen SSD que se conectan mediante <strong>SATA III</strong>, pero los más avanzados usan <strong>M.2 NVMe</strong>, que aprovecha directamente el bus PCIe de la placa base para ser aún más rápidos. Aunque son duraderos, los SSD tienen un número limitado de ciclos de lectura y escritura, por lo que con el tiempo pueden desgastarse.</p>
+</li>
+<li>
+<p><strong>Unidades ópticas</strong>: En el pasado, se utilizaban discos como <strong>CD-ROM, DVD y Blu-ray</strong> para almacenar información o reproducir películas. Hoy en día, estas unidades casi no se usan, ya que la mayoría de los contenidos se descargan o se ven en streaming. Sin embargo, todavía pueden encontrarse en algunos equipos antiguos.</p>
+</li>
+<li>
+<p><strong>Memoria USB y tarjetas de memoria</strong>: Los <strong>pendrives o memorias USB</strong> son muy populares por su portabilidad. Podemos guardar documentos, fotos, música e incluso sistemas operativos completos. Su memoria es regrabable y permite llevar información de un ordenador a otro de forma sencilla.  Las <strong>tarjetas de memoria SD y microSD</strong> se utilizan en cámaras, móviles o tablets. Son pequeñas, fáciles de transportar y permiten ampliar la capacidad de almacenamiento de los dispositivos portátiles. Formatos antiguos como <strong>MMC</strong> ya están en desuso.</p>
+</li>
+</ul>
+<figure style="align: center;">
+        <img src="./imagenes/almacenammiento.png">
+        <figcaption>Tipos almacenamiento</figcaption>
+    </figure>
+
+<h3 id="perifericos-de-entrada-y-salida">Periféricos de entrada y salida<a class="headerlink" href="#perifericos-de-entrada-y-salida" title="Permanent link">&para;</a></h3>
+<p>Los <strong>periféricos</strong> son dispositivos externos que permiten la comunicación entre el usuario y el ordenador, o entre el ordenador y otros dispositivos. Se conectan al ordenador para <strong>entrar información</strong>, <strong>salir información</strong> o <strong>realizar ambas funciones</strong>.<br />
+Entre los principales periféricos encontramos:</p>
+<div class="grid cards">
+<ul>
+<li><strong>Teclado</strong>. El teclado es una de las principales herramientas que usamos para interactuar e introducir datos en el computador. Sus teclas están clasificadas en 6 áreas. Puede ser de membrana o de resorte. </li>
+</ul>
+<figure style="float: right;">
+    <img src="./imagenes/teclado.png" width="220">
+</figure>
+<ul>
+<li><strong>Ratón</strong> El ratón hace parte de los periféricos de tu equipo y es la parte del computador que te permite interactuar con los objetos que aparecen en la pantalla, por medio de un cursor o puntero que verás en el monitor. Un sensor fotografía la superficie y detecta las variaciones entre sucesivas fotografías, con lo cual determina si el ratón ha cambiado de posición.</li>
+</ul>
+<figure style="float: right;">
+    <img src="./imagenes/raton.png" width="220">
+</figure>
+<ul>
+<li><strong>Otros dispositivos de entrada:</strong> micrófono, tableta, pantalla táctil, escáner, etc.</li>
+</ul>
+<figure style="float: right;">
+    <img src="./imagenes/speakers.png" width="220">
+</figure>
+<ul>
+<li><strong>Monitor</strong>. El monitor del computador, también conocido como pantalla,  muestra la información de tu equipo como imágenes y textos, que son generados gracias a una tarjeta de video que se encuentra en el interior de la torre del computador. Las características principales del monitor son la resolución y la velocidad de creación de imágenes. Los datos que salen de la CPU deben pasar por la tarjeta de vídeo (generalmente pinchada en las ranuras de expansión) para ser convertidos en información capaz de ser interpretada por la pantalla. Hoy en día, las mejores pantallas son los monitores <strong>LED, OLED, QLED</strong> llegar a resoluciones de pantalla 4K y 8K.</li>
+</ul>
+<figure style="float: right;">
+    <img src="./imagenes/monitor.png" width="320">
+</figure>
+<ul>
+<li><strong>Impresora</strong>. Sus principales características son la resolución, medida en puntos por pulgada (dpi), y la velocidad de impresión, medida en páginas por minuto (ppm). Pueden ser matriciales (en los supermercados), de inyección de tinta (de uso doméstico), láser (muy precisas), térmicas (en los cajeros), etc.</li>
+</ul>
+<figure style="float: right;">
+    <img src="./imagenes/impresora.png" width="320">
+</figure>
+</div>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<h3 id="aa14-evolucion-tecnologica"><strong>AA1.4</strong> Evolución tecnológica<a class="headerlink" href="#aa14-evolucion-tecnologica" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Razonar la selección e interacción de componentes de un sistema informático en el entorno personal en base a los requerimientos.">CE2.2</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>
+<p>Compara un ordenador de hace 20 años con uno actual. Indica las diferencias en CPU, memoria RAM, almacenamiento y periféricos.
+Explica cómo estas mejoras facilitan el uso de programas modernos.</p>
+</li>
+<li>
+<p>Pregunta de razonamiento sobre buses. Si la CPU es muy rápida pero el bus de datos es lento, ¿qué problema puede surgir? Explica cómo afecta esto al rendimiento general del ordenador.</p>
+</li>
+</ol>
+<!-- 
+???success "Solución"
+
+    1. Comparación de un ordenador de hace 20 años con uno actual
+
+    | Componente         | Ordenador hace 20 años          | Ordenador actual                   |
+    |-------------------|--------------------------------|-----------------------------------|
+    | **CPU**           | Procesador simple de 1-2 núcleos, 500 MHz a 1 GHz | Multi-core (4-16 núcleos), 2-5 GHz, mayor eficiencia energética |
+    | **Memoria RAM**   | 128 MB – 512 MB                 | 16 GB – 64 GB DDR4/DDR5           |
+    | **Almacenamiento**| HDD de 20-80 GB, IDE            | SSD NVMe de 500 GB – 2 TB, SATA o M.2 |
+    | **Periféricos**   | Monitor CRT, teclado PS/2, ratón mecánico, impresora matricial | Monitor LED/OLED 4K, teclado y ratón óptico o inalámbrico, impresora láser o multifunción |
+
+    **Explicación:**  
+    - **CPU:** Los procesadores modernos tienen más núcleos y pueden ejecutar varias tareas a la vez (multitarea), haciendo que programas complejos funcionen sin ralentizarse.  
+    - **RAM:** Más memoria permite que los programas se ejecuten rápidamente y que varias aplicaciones funcionen al mismo tiempo.  
+    - **Almacenamiento:** Los SSD son mucho más rápidos que los HDD, reduciendo los tiempos de carga de programas y del sistema operativo.  
+    - **Periféricos:** Los nuevos monitores y dispositivos permiten mejor interacción, resolución y ergonomía, mejorando la experiencia de usuario y la eficiencia en tareas modernas.
+
+    2. Pregunta de razonamiento sobre buses
+
+    **Situación:** La CPU es muy rápida pero el bus de datos es lento.  
+
+    **Problema que surge:**  
+    - La CPU no puede recibir ni enviar datos lo suficientemente rápido, por lo que **pasa tiempo esperando** a que los datos lleguen desde la memoria o se envíen a los periféricos.  
+
+    **Cómo afecta al rendimiento:**  
+    - Aunque la CPU pueda procesar millones de instrucciones por segundo, el ordenador en general **funciona más lento** porque el flujo de información se convierte en un cuello de botella.  
+    - Mejorar solo la CPU no basta; la velocidad del bus debe ser adecuada para aprovechar al máximo el rendimiento del sistema. -->
+
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="3_Ordenadores.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 2.1- Ordenadores">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                2.1- Ordenadores
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="5_HardwareII.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 2.3- Placa bases">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                2.3- Placa bases
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

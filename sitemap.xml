@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aznarel.github.io/PRSI/index.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/00_Fundamentos/Evaluacion.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/00_Fundamentos/PlantillaEntregaPracticas.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/01_TIC/1_ProgramacionAula.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/01_TIC/3_SociedadInformacion.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/4_Ordenadores.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://aznarel.github.io/PRSI/01_TIC/4_EPA.html</loc>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/5_Hardware.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/1_ProgramacionAula.html</loc>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/6_HardwareII.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/3_Ordenadores.html</loc>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/7_Sofware.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/4_Hardware.html</loc>
+         <lastmod>2025-09-10</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/02_Propiedad/1_ProgramacionAula.html</loc>
-         <lastmod>2025-09-09</lastmod>
+         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/5_HardwareII.html</loc>
+         <lastmod>2025-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/7_Sofware.html</loc>
+         <lastmod>2025-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://aznarel.github.io/PRSI/03_Propiedad/1_ProgramacionAula.html</loc>
+         <lastmod>2025-09-10</lastmod>
     </url>
 </urlset>
