@@ -570,6 +570,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Conversiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#division-por-dos-utilizando-el-residuo" class="md-nav__link">
+    <span class="md-ellipsis">
+      División por dos utilizando el residuo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -583,9 +598,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#aa13-conversiones" class="md-nav__link">
+  <a href="#aa21-conversiones" class="md-nav__link">
     <span class="md-ellipsis">
-      AA1.3 Conversiones
+      📝 AA2.1 Conversiones
     </span>
   </a>
   
@@ -1028,14 +1043,17 @@
 <!-- https://drive.google.com/file/d/13f-bDk2hKpG7msMzH5OLNJiX9-apCQaC/view -->
 
 <h1 id="ordenadores"><img alt="icono" src="imagenes/iconoHw.png" width="55" />  Ordenadores<a class="headerlink" href="#ordenadores" title="Permanent link">&para;</a></h1>
-<div class="admonition example">
-<p class="admonition-title">Situación de Aprendizaje</p>
-<ul>
-<li>¿Cómo funciona realmente un ordenador? </li>
-<li>¿Qué es el sistema binarios? </li>
-<li>¿Por qué se emplea el sistema binario para la representación de la información en los ordenadores?</li>
-</ul>
+<div style="background-color:#fff3cd; display:flex; justify-content:space-between; align-items:center; padding:20px; border-radius:8px;">
+
+  <div style= color:#444; font-size:18px; font-family:'Comic Sans MS', cursive, sans-serif;">
+    <ul>
+        <li>¿Cómo funciona realmente un ordenador? </li>
+        <li>¿Qué es el sistema binarios? </li>
+        <li>¿Por qué se emplea el sistema binario para la representación de la información en los ordenadores?</li>
+    </ul>
+  </div>
 </div>
+
 <h2 id="funcionamiento-de-un-ordenador">Funcionamiento de un ordenador<a class="headerlink" href="#funcionamiento-de-un-ordenador" title="Permanent link">&para;</a></h2>
 <p>El ser humano usamos palabras para representar textos, el sistema decimal para los números, dibujos para las imágenes..</p>
 <p>Sin embargo, el ordenador es una máquina digital que sólo es capaz de representar la información utilizando el sistema binario en el que solo existe el «0» y el «1». </p>
@@ -1099,12 +1117,12 @@ Las clases de codificación de datos más utilizadas son:</p>
 <li>
 <p><strong>Sistema decimal</strong></p>
 <p>Se utilizan diez símbolos (0, 1, 2, 3, 4, 5, 6, 7, 8 y 9) y el valor de cada símbolo está asociado a una potencia de 10, de forma que podemos expresar cualquier cantidad como una suma de potencias de 10. </p>
-<p>Por ejemplo: 237510 = 2 · 103 + 3 · 102 + 7 · 101 + 5 · 100 = 2000 + 300 + 70 + 5 = 2375</p>
+<p>Por ejemplo: 2375<sub>10</sub> = 2 · 10<sup>3</sup> + 3 · 10<sup>2</sup> + 7 · 10<sup>1</sup> + 5 · 10<sup>0</sup> = 2000 + 300 + 70 + 5 = 2375</p>
 </li>
 <li>
 <p><strong>Sistema binario</strong></p>
 <p>Se utilizan los dígitos 0 y 1, de forma que cualquier valor será expresado con una cadena de ceros y unos. Para representar cualquier número, el valor de cada posición es el de una potencia de base 2 (igual que en decimal pero, en lugar de tomar base 10, tomando base 2). </p>
-<p>Por ejemplo: 10112 = 1 · 23 + 0 · 22 + 1 · 21 + 1 · 20 = 8 + 0 + 2 + 1 = 1110</p>
+<p>Por ejemplo: 1011<sub>2</sub> = 1 · 2<sup>3</sup> + 0 · 2<sup>2</sup> + 1 · 2<sup>1</sup> + 1 · 2<sup>0</sup> = 8 + 0 + 2 + 1 = 1110</p>
 </li>
 <li>
 <p><strong>Sistema hexadecimal</strong></p>
@@ -1121,10 +1139,11 @@ Las clases de codificación de datos más utilizadas son:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Decimal a Binario</label><label for="__tabbed_1_2">Binario a decimal</label><label for="__tabbed_1_3">Decimal a hexadecimal</label><label for="__tabbed_1_4">Hexadecimal a decimal</label><label for="__tabbed_1_5">Hexadecimal a binario o viceversa</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
+<h3 id="division-por-dos-utilizando-el-residuo">División por dos utilizando el residuo<a class="headerlink" href="#division-por-dos-utilizando-el-residuo" title="Permanent link">&para;</a></h3>
 <p>Para llevar a cabo la conversión inversa, <em><strong>pasar de decimal a binario</strong></em>, podemos utilizar el método de la división sucesiva entre 2 y quedarnos con el último cociente y el resto de los demás.</p>
 <ul>
 <li>Dividimos el número decimal entre 2</li>
-<li>Tomamos el residuo de la operación</li>
+<li>Tomamos el residuo de la operación (Ya que estamos dividendo por 2, cuando el dividendo sea un número par, el residuo será 0, y cuando el dividendo sea un número impar el residuo binario será 1.)</li>
 <li>Repetimos el proceso hasta que el cociente sea <code>0</code>.</li>
 <li>Los bits binarios obtenidos son el resultado</li>
 </ul>
@@ -1132,56 +1151,39 @@ Las clases de codificación de datos más utilizadas son:</p>
 <p>Usando el método de la división sucesiva tenemos,</p>
 <p><figure style="align: center;">
     <img src="./imagenes/decimalBinario.png">
-    <figcaption>Tabla del 16</figcaption>
+    <figcaption>Paso de decimal a binario por método de la división</figcaption>
 </figure></p>
-<p><div style="text-align: center;">
+<p>🎬 Vídeo explicativo de la conversión. 
+<div style="text-align: center;">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Hri9MiprKgs?si=_lil86eQvXMCrx5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div></p>
 </div>
 <div class="tabbed-block">
-<p>Para convertir <em><strong>un número binario a decimal</strong></em>, multiplicamos cada dígito binario por la potencia de dos correspondiente a su posición y sumamos los resultados.</p>
-<p>Por ejemplo, para convertir el número binario <code>10110</code> (22) a decimal:</p>
-<p>1 × 2⁴ + 0 × 2³ + 1 × 2² + 1 × 2¹ + 0 × 2⁰
-= 16 + 0 + 4 + 2 + 0
-= 22</p>
-<p>Para hacerlo de forma sencilla, nos hacemos una tabla.</p>
-<ul>
-<li>En la parte superior ponemos los dígitos del número binario</li>
-<li>Debajo, ponemos las potencias de 2</li>
-<li>Multiplicamos dígitos por potencias. Es decir, quitamos los que sean <code>0</code> en binario</li>
-<li>Sumamos</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Binario</th>
-<th>1</th>
-<th>0</th>
-<th>1</th>
-<th>1</th>
-<th>0</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Potencia</td>
-<td>16</td>
-<td>8</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Multiplicar</td>
-<td>16</td>
-<td>0</td>
-<td>4</td>
-<td>2</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-<p>Finalmente, sumamos los números de la última fila = 16 + 0 + 4 + 2 + 0</p>
+<p>Para convertir <em><strong>un número binario a decimal</strong></em>, usamos la notación posicional. Multiplicamos cada dígito binario por la potencia de dos correspondiente a su posición y sumamos los resultados.</p>
+<p>Por ejemplo, para convertir el número binario <strong>10011011<sub>2</sub></strong> a decimal:</p>
+<ol>
+<li>Primero, escribe el número binario. <strong>10011011<sub>2</sub></strong></li>
+<li>Luego, escribe las potencias de dos de derecha a izquierda. Empieza en 2<sup>0</sup> , dándole un valor de "1". Incrementa el exponente en uno en cada potencia. Détente cuando la cantidad de elementos de la lista sea igual a la cantidad de dígitos del número binario. <strong>2<sup>7</sup> + 2<sup>6</sup> + 2<sup>5</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>1</sup> + 2<sup>0</sup></strong></li>
+<li>Calcula las potencias indicadas: <strong>128, 64, 32, 16, 8, 4, 2, 1.</strong></li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/binarioDecimal.png">
+    <figcaption>Paso de decimal a binario por método de la división</figcaption>
+</figure></p>
+<ol start="4">
+<li>Ahora multiplica el valor de cada potencia por el dígito en binario de esa posición. Por ejemplo: 1 x 1 = 1 , 2 x 1 = 2, 4 x 0 = 0...</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/binarioDecimal2.png">
+    <figcaption>Cálculo</figcaption>
+</figure></p>
+<ol start="5">
+<li>Por último, suma el resultado de todas las multiplicaciones anteriores obteniendo el número decimal.</li>
+</ol>
+<p><figure style="align: center;">
+    <img src="./imagenes/binarioDecimal3.png">
+    <figcaption>Suma final/figcaption&gt;
+</figure></p>
 </div>
 <div class="tabbed-block">
 <p>Para llevar a cabo la conversión inversa, <em><strong>pasar de decimal a hexadecimal</strong></em>, podemos utilizar el método de la división sucesiva por 16.</p>
@@ -1214,18 +1216,36 @@ Las clases de codificación de datos más utilizadas son:</p>
 <div class="tabbed-block">
 <p>Para convertir <em><strong>un número hexadecimal a decimal</strong></em>, multiplicamos cada dígito binario por la potencia de 16 correspondiente a su posición y sumamos los resultados.</p>
 <p>Por ejemplo, para convertir el número binario <code>15A</code> a decimal:</p>
-<p><code>15A</code> =  1 × 16² + 5 × 16¹ + 10× 16⁰
+<p><code>15A</code><sub>16</sub> =  1 × 16² + 5 × 16¹ + 10× 16⁰
 = 256 + 80 + 10
-= <strong>346</strong></p>
+= <strong>346<sub>10</sub></strong></p>
 </div>
 <div class="tabbed-block">
-<p>Es un tipo de conversión directa, en la que simplemente transformamos cada grupo de cuatro bits por separado.</p>
-<p>Ejemplo: <code>A23</code> (hex) = 1010 0010 0011 (binario)</p>
+<p>Es un tipo de conversión directa, en la que simplemente transformamos cada dígito hexadecimal a cuatro dígitos binarios.</p>
+<p><strong>Ejemplo Hexadecimal a Binario:</strong> <code>A23</code><sub>16</sub> = 1010 0010 0011 <sub>2</sub></p>
+<p><strong>Ejemplo Binario a Hexadecimal:</strong>: 11101100101001<sub>2</sub></p>
+<ul>
+<li>Recorta la cadena de números binarios en grupos de 4 dígitos, comenzando desde la derecha.</li>
+<li>
+<p>Si el primer número no es de 4 dígitos, agrega ceros adicionales adelante hasta completarlo
+    <figure style="align: center;" width="520">
+        <img src="./imagenes/hexaBinario.png">
+        <figcaption>Resultado final</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Convierte de a un grupo de 4 dígitos por vez.</p>
+<p><figure style="align: center;" width="520">
+    <img src="./imagenes/hexaBinario1.png">
+    <figcaption>Resultado final</figcaption>
+</figure></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
-<h3 id="aa13-conversiones"><strong>AA1.3</strong> Conversiones<a class="headerlink" href="#aa13-conversiones" title="Permanent link">&para;</a></h3>
+<h3 id="aa21-conversiones">📝 <strong>AA2.1</strong> Conversiones<a class="headerlink" href="#aa21-conversiones" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong><em>(C.ESP2 / <abbr title="Utilizar con precisión las unidades de medida y sistemas de representación de la información.">CE2.1</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
 </blockquote>
@@ -1238,10 +1258,7 @@ c) 150<br />
 d) 5 <br />
 e) 30 <br />
 f) 148 <br />
-g) 220 <br />
-g) 192 <br />
-i) 168 <br />
-j) 255   </p>
+g) 220   </p>
 </li>
 <li>
 <p>Convierte los siguientes números <strong>binarios a decimal</strong>:<br />
@@ -1251,10 +1268,7 @@ c) 11110010  <br />
 d) 101111 <br />
 e) 101110 <br />
 f) 101010 <br />
-g) 111000 <br />
-g) 10001110 <br />
-i) 100001000 <br />
-j) 1011101100110100  </p>
+g) 111000   </p>
 </li>
 <li>
 <p>Convierte los siguientes números <strong>decimales a hexadecimal</strong>:<br />
@@ -1264,10 +1278,7 @@ c) 1023
 d) 55<br />
 e) 300 <br />
 f) 118 <br />
-g) 224 <br />
-g) 168 <br />
-i) 100 <br />
-j) 250   </p>
+g) 224   </p>
 </li>
 <li>
 <p>Convierte los siguientes números <strong>hexadecimales a decimal</strong>:<br />
@@ -1277,10 +1288,7 @@ c) 3B2<br />
 d) F4 <br />
 e) D3E <br />
 f) 11111 <br />
-g) EBAC <br />
-h) B <br />
-i) 1C <br />
-j) 1FC   </p>
+g) EBAC   </p>
 </li>
 <li>
 <p>Convierte los siguientes números <strong>hexadecimales a binario</strong>:<br />
@@ -1290,10 +1298,7 @@ c) A23<br />
 d) 2394 <br />
 e) D3E <br />
 f) 11111 <br />
-g) EBAC <br />
-h) B <br />
-i) 1C <br />
-j) 1FC   </p>
+g) EBAC   </p>
 </li>
 <li>
 <p>Convierte los siguientes números <strong>binarios a hexadecimal</strong>:<br />
@@ -1303,16 +1308,17 @@ c) 1010100011<br />
 d) 1001111<br />
 e) 1101010110001<br />
 f) 100001<br />
-g) 100000000000111<br />
-h) 1010000110111100000<br />
-i) 0001<br />
-j) 1000  </p>
+g) 10000</p>
 </li>
 <li>
 <p>Explica qué es el <strong>sistema octal</strong>, cómo se hacen las transformaciones entre decimal, binario y octal, y realiza un ejemplo de conversión:<br />
 - Convierte el número decimal 95 a octal.  </p>
 </li>
 </ol>
+<details class="success" open="open">
+<summary>Solución</summary>
+<p>Emplea la siguiente <a href="https://www.calculadoras.uno/binario-decimal/">web</a> para verificar tus cálculos.</p>
+</details>
 <!-- 
 ???success "Soluciones"
 
