@@ -2,62 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aznarel.github.io/PRSI/index.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/00_Fundamentos/Evaluacion.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/00_Fundamentos/PlantillaEntregaPracticas.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/01_TIC/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/01_TIC/3_SociedadInformacion.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/01_TIC/4_EPA.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/02_Ordenadores/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/02_Ordenadores/2_ResumenUD.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/02_Ordenadores/3_Ordenadores.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/02_Ordenadores/4_Hardware.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/02_Ordenadores/5_HardwareII.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/03_SO/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-19</lastmod>
-    </url>
-    <url>
-         <loc>https://aznarel.github.io/PRSI/03_SO/3_Software.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/03_SO/4_SoftwareII.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/03_SO/5_SoftwareIII.html</loc>
-         <lastmod>2025-10-19</lastmod>
+         <lastmod>2025-10-20</lastmod>
+    </url>
+    <url>
+         <loc>https://aznarel.github.io/PRSI/03_SO/6_SoftwareVI.html</loc>
+         <lastmod>2025-10-20</lastmod>
+    </url>
+    <url>
+         <loc>https://aznarel.github.io/PRSI/03_SO/7_SoftwareVII.html</loc>
+         <lastmod>2025-10-20</lastmod>
+    </url>
+    <url>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/1_ProgramacionAula.html</loc>
+         <lastmod>2025-10-20</lastmod>
+    </url>
+    <url>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/3_Software.html</loc>
+         <lastmod>2025-10-20</lastmod>
     </url>
 </urlset>
