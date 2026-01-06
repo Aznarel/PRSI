@@ -1,0 +1,1288 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Python">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/PRSI/04_Prog/9_Python_II.html">
+      
+      
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Python - Programación, redes y sistemas informáticos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-header__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, redes y sistemas informáticos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-nav__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Programación, redes y sistemas informáticos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/PlantillaEntregaPracticas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plantilla Entrega Prácticas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Sistemas Informáticos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Sistemas Informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UD2: Dispositivos informáticos y sus componentes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UD2: Dispositivos informáticos y sus componentes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_Ordenadores/3_Ordenadores.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1- Ordenadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Desarrollo de software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Desarrollo de software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📁 UD4: Fundamentos de programación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            📁 UD4: Fundamentos de programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_Dise%C3%B1o.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 Industria del software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_EticaSW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 Sostenibilidad y ética en el desarrollo de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_Prog.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 Fundamentos de programación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- 
+
+PROPIEDAD INTELECTUAL: https://lopegonzalez.es/eso-y-bachillerato/tic-i-1o-bachillerato/tema-10-buscadores/ -->
+
+<h1 id="python"><img alt="icono" src="imagenes/OIP.webp" width="55" /> Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<p>La <strong>estructura de un programa en Python</strong> se caracteriza por su simplicidad, un aspecto que contribuye significativamente a la legibilidad y mantenibilidad del código. A continuación, veremos brevemente los componentes principales que forman parte de la estructura completa de un programa en Python.</p>
+<h2 id="encabezado-del-script">Encabezado del script<a class="headerlink" href="#encabezado-del-script" title="Permanent link">&para;</a></h2>
+<p>Los programas en Python pueden comenzar con una línea especial llamada «<em><strong>shebang</strong></em>» (<strong>#!</strong>) seguida de la ruta al intérprete de Python. Esto es particularmente útil en sistemas Unix/Linux para ejecutar el script directamente desde la línea de comandos.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="ch">#!/usr/bin/env python3</span>
+</code></pre></div>
+<h2 id="importaciones-de-modulos">Importaciones de módulos<a class="headerlink" href="#importaciones-de-modulos" title="Permanent link">&para;</a></h2>
+<p>Python incluye una cantidad enorme de funcionalidad, pero aun así, podemos extenderla para usar librerías (<strong>módulos</strong>) que nos proporcionan otras utilidades que podemos necesitar en momentos puntuales.</p>
+<p>La importación de módulos permite, por tanto, reutilizar código existente de terceros. Las importaciones generalmente se colocan al inicio del script.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="linenos" data-linenos="2 "></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="linenos" data-linenos="3 "></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</code></pre></div>
+<p>Estos tres módulos, nos ofrecen utilidades adicionales para realizar cálculos matemáticos, interactuar con el sistema operativo o trabajar con fechas/horas, respectivamente.</p>
+<h2 id="definiciones-de-funciones-y-clases">Definiciones de funciones y clases<a class="headerlink" href="#definiciones-de-funciones-y-clases" title="Permanent link">&para;</a></h2>
+<p>La definición de funciones y clases es una parte clave de la organización del código en Python. Las <strong>funciones</strong> encapsulan bloques de código reutilizables, mientras que las <strong>clases</strong> permiten la programación orientada a objetos.</p>
+<p>No es necesario que te quedes con la sintaxis, porque lo verás con más detalle más adelante, pero es bueno que empiece a sonarte.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="k">def</span> <span class="nf">calcular</span>\<span class="n">_area</span>\<span class="n">_circulo</span><span class="p">(</span><span class="n">radio</span><span class="p">):</span>
+<span class="linenos" data-linenos="2 "></span>    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> \<span class="o">*</span> <span class="n">radio</span> \<span class="o">*</span>\<span class="o">*</span> <span class="mi">2</span>
+<span class="linenos" data-linenos="3 "></span>
+<span class="linenos" data-linenos="4 "></span><span class="k">class</span> <span class="nc">Persona</span><span class="p">:</span>
+<span class="linenos" data-linenos="5 "></span>    <span class="k">def</span> \<span class="n">_</span>\<span class="n">_init</span>\<span class="n">_</span>\<span class="n">_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span>
+<span class="linenos" data-linenos="6 "></span>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+<span class="linenos" data-linenos="7 "></span>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
+</code></pre></div>
+En el código anterior hemos definido una función para calcular el área de un círculo, y hemos creado una clase para modelar personas.</p>
+<h2 id="comentarios">Comentarios<a class="headerlink" href="#comentarios" title="Permanent link">&para;</a></h2>
+<p>Los comentarios dentro del código son fundamentales para su comprensión y mantenimiento. Una cosa importante que es necesario entender es que, a pesar de que están en el código, no intervienen en el funcionamiento del mismo, ya que son líneas que no se ejecutan. Sólo están ahí para que los programadores se dejen mensajes sobre el funcionamiento del programa.</p>
+<p>Python utiliza el símbolo <strong>#</strong> para los comentarios de una sola línea y las triple comillas (<strong>”’</strong> o <strong>“””</strong>) para los comentarios multilínea.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>\<span class="c1"># Este es un comentario de una sola línea</span>
+<span class="linenos" data-linenos="2 "></span>
+<span class="linenos" data-linenos="3 "></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="4 "></span><span class="sd">Este es un comentario multilínea.</span>
+<span class="linenos" data-linenos="5 "></span><span class="sd">Puede ser utilizado para proporcionar descripciones detalladas</span>
+<span class="linenos" data-linenos="6 "></span><span class="sd">de funciones, clases o módulos.</span>
+<span class="linenos" data-linenos="7 "></span><span class="sd">También se suele usar para explicar porqué el programador</span>
+<span class="linenos" data-linenos="8 "></span><span class="sd">ha tomado una decisión de diseño concreta y no otra.</span>
+<span class="linenos" data-linenos="9 "></span><span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div>
+<h2 id="espaciado-y-sangria">Espaciado y sangría<a class="headerlink" href="#espaciado-y-sangria" title="Permanent link">&para;</a></h2>
+<p>Python utiliza la <strong>sangría</strong> para definir bloques de código, lo cual es extremadamente importante. <strong>Cada nivel de sangría (habitualmente cuatro espacios) indica un nuevo bloque</strong>. El espaciado adecuado es vital en Python, ya que define la estructura lógica del programa.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<span class="linenos" data-linenos="2 "></span>    <span class="k">if</span> <span class="n">nombre</span><span class="p">:</span>
+<span class="linenos" data-linenos="3 "></span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="4 "></span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos" data-linenos="5 "></span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola, Mundo!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Veamos un ejemplo completo:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="linenos" data-linenos=" 2 "></span>
+<span class="linenos" data-linenos=" 3 "></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="linenos" data-linenos=" 4 "></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span><span class="k">def</span> <span class="nf">calcular</span>\<span class="n">_area</span>\<span class="n">_circulo</span><span class="p">(</span><span class="n">radio</span><span class="p">):</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcula el área de un círculo dado su radio.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos=" 9 "></span>    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> \<span class="o">*</span> <span class="n">radio</span> \<span class="o">*</span>\<span class="o">*</span> <span class="mi">2</span>
+<span class="linenos" data-linenos="10 "></span>
+<span class="linenos" data-linenos="11 "></span><span class="k">class</span> <span class="nc">Persona</span><span class="p">:</span>
+<span class="linenos" data-linenos="12 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Representa a una persona con un nombre y una edad.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="13 "></span>    <span class="k">def</span> \<span class="n">_</span>\<span class="n">_init</span>\<span class="n">_</span>\<span class="n">_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">):</span>
+<span class="linenos" data-linenos="14 "></span>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+<span class="linenos" data-linenos="15 "></span>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
+<span class="linenos" data-linenos="16 "></span>
+<span class="linenos" data-linenos="17 "></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="linenos" data-linenos="18 "></span><span class="w">    </span><span class="sd">&quot;&quot;&quot;Función principal del programa.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="19 "></span>    <span class="n">radio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce el radio del círculo: &quot;</span><span class="p">))</span>
+<span class="linenos" data-linenos="20 "></span>    <span class="n">area</span> <span class="o">=</span> <span class="n">calcular</span>\<span class="n">_area</span>\<span class="n">_circulo</span><span class="p">(</span><span class="n">radio</span><span class="p">)</span>
+<span class="linenos" data-linenos="21 "></span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El área del círculo es: </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="22 "></span>
+<span class="linenos" data-linenos="23 "></span>    <span class="n">persona</span> <span class="o">=</span> <span class="n">Persona</span><span class="p">(</span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="linenos" data-linenos="24 "></span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nombre: </span><span class="si">{</span><span class="n">persona</span><span class="o">.</span><span class="n">nombre</span><span class="si">}</span><span class="s2">, Edad: </span><span class="si">{</span><span class="n">persona</span><span class="o">.</span><span class="n">edad</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="25 "></span>
+<span class="linenos" data-linenos="26 "></span><span class="k">if</span> \<span class="n">_</span>\<span class="n">_name</span>\<span class="n">_</span>\<span class="n">_</span> <span class="o">==</span> <span class="s2">&quot;\_\_main\_\_&quot;</span><span class="p">:</span>
+<span class="linenos" data-linenos="27 "></span>    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="tipos-constantes-variables-operadores-y-expresiones">Tipos, constantes, variables, operadores y expresiones<a class="headerlink" href="#tipos-constantes-variables-operadores-y-expresiones" title="Permanent link">&para;</a></h2>
+<p>En Python, como en cualquier lenguaje de programación, es importante entender cómo manejar los datos. Los <strong>tipos</strong>, <strong>constantes</strong> y <strong>variables</strong> son los componentes fundamentales que permiten almacenar y manipular estos datos de manera efectiva.</p>
+<h3 id="tipos-de-datos">Tipos de datos<a class="headerlink" href="#tipos-de-datos" title="Permanent link">&para;</a></h3>
+<p>Los cuatro principales tipos de datos que se manejan con los enteros, los números de punto flotante, las cadenas de caracteres o string, y los booleanos:</p>
+<ul>
+<li><strong>Enteros (int)</strong>: representan números enteros sin parte decimal. Ejemplo: <strong>x = 5</strong></li>
+<li><strong>Números de punto flotante (float)</strong>: representan números reales con parte decimal. Ejemplo: <strong>y = 3.14</strong></li>
+<li><strong>Cadenas de texto (str)</strong>: son secuencias de caracteres utilizadas para representar texto. Se pueden definir utilizando comillas simples o dobles. Ejemplo: <strong>mensaje = “Hola, mundo”</strong></li>
+<li><strong>Booleanos (bool)</strong>: los valores booleanos representan verdadero (<strong>True</strong>) o falso (<strong>False</strong>), y son útiles cuando debemos decidir entre dos posibles estados. Ejemplo: <strong>es_mayor = True</strong>.</li>
+</ul>
+<h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
+<p>Las variables son espacios en memoria que se utilizan para almacenar datos.</p>
+<p>Piensa en las variables como en un cajón con un nombre. Normalmente usamos un cajón para camisetas, otro para bañadores y otro para complementos. El cajón puede estar vacío, o tener elementos dentro. Podemos meter cosas y sacarlas. También podemos dejarlo vacío. Las variables funcionan igual, el cajón sería un espacio en memoria donde podemos almacenar datos, cambiarlos o borrarlos.</p>
+<p>Para acceder a esos datos usamos el nombre de la variable, que es un identificador que le ponemos a ese espacio de memoria..</p>
+<p>En Python, no es necesario declarar el tipo de una variable explícitamente; se infiere del valor asignado.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>\<span class="c1"># Ejemplos de variables</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="linenos" data-linenos="3 "></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan&quot;</span>
+<span class="linenos" data-linenos="4 "></span><span class="n">altura</span> <span class="o">=</span> <span class="mf">1.75</span>
+<span class="linenos" data-linenos="5 "></span><span class="n">es</span>\<span class="n">_estudiante</span> <span class="o">=</span> <span class="kc">True</span>
+</code></pre></div>
+<h3 id="constantes">Constantes<a class="headerlink" href="#constantes" title="Permanent link">&para;</a></h3>
+<p>En todos los lenguajes de programación, las constantes son variables que no varían. Funcionan igual sintácticamente hablando, pero una vez que se les asigna un valor, no puede ser cambiado. </p>
+<p>En Python, no existe una manera estricta de definir constantes como en otros lenguajes de programación, pero <strong>por convención</strong>, se utilizan nombres de variables en mayúsculas para indicar que su valor no debe cambiar.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">GRAVEDAD</span> <span class="o">=</span> <span class="mf">9.81</span>
+</code></pre></div>
+<h3 id="operadores">Operadores<a class="headerlink" href="#operadores" title="Permanent link">&para;</a></h3>
+<p>Los operadores son fundamentales en la programación, ya que permiten realizar cálculos, comparaciones y operaciones lógicas sobre los datos. A continuación, se presenta una descripción detallada de los diferentes tipos de operadores en Python y cómo se utilizan en las expresiones.</p>
+<p>Comenzaremos con los <strong>operadores aritméticos</strong> clásicos, los que se utilizan para realizar operaciones matemáticas básicas:</p>
+<ul>
+<li><strong>Suma (+)</strong>: suma dos operandos.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="linenos" data-linenos="3 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>  <span class="c1"># resultado es 15</span>
+</code></pre></div>
+<ul>
+<li><strong>Resta (-)</strong>: resta el segundo operando del primero.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>  <span class="c1"># resultado es 5</span>
+</code></pre></div>
+<ul>
+<li><strong>Multiplicación (*)</strong>: multiplica dos operandos.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> \<span class="o">*</span> <span class="n">b</span>  <span class="c1"># resultado es 50</span>
+</code></pre></div>
+<ul>
+<li><strong>División (/)</strong>: divide el primer operando por el segundo. El resultado es un número de punto flotante.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>  <span class="c1"># resultado es 2.0</span>
+</code></pre></div>
+<ul>
+<li><strong>División entera (//)</strong>: divide el primer operando por el segundo y devuelve la parte entera del resultado.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">//</span> <span class="n">b</span>  <span class="c1"># resultado es 2</span>
+</code></pre></div>
+<ul>
+<li><strong>Módulo (%)</strong>: devuelve el resto de la división del primer operando por el segundo.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>  <span class="c1"># resultado es 0</span>
+</code></pre></div>
+<ul>
+<li><strong>Exponenciación (**)</strong>: eleva el primer operando a la potencia del segundo.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> \<span class="o">*</span>\<span class="o">*</span> <span class="n">b</span>  <span class="c1"># resultado es 100000</span>
+</code></pre></div>
+<p>Sigamos con los <strong>operadores de comparación</strong>. Estos se utilizan para comparar dos valores y devuelven un valor booleano (<strong>True</strong> o <strong>False</strong>).</p>
+<p>Su uso es similar a realizar una pregunta que se contesta con si o no.</p>
+<p>Por ejemplo, ¿tienes más de 18 años? No. En Python se haría algo similar (edad &gt; 18) = False.</p>
+<p>Veamos los operadores que podemos encontrar en esta categoría:</p>
+<ul>
+<li><strong>Igual a (==)</strong>: verifica si los operandos son iguales.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">a</span><span class="o">=</span><span class="mi">7</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">b</span><span class="o">=</span><span class="mi">12</span>
+<span class="linenos" data-linenos="3 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># resultado es False</span>
+</code></pre></div>
+<ul>
+<li><strong>Distinto de (!=)</strong>: verifica si los operandos son diferentes.
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># resultado es True</span>
+</code></pre></div></li>
+<li><strong>Mayor que (&gt;) y mayor o igual que (&gt;=)</strong>: verifica si el primer operando es mayor que el segundo.
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># resultado es False</span>
+</code></pre></div></li>
+<li>
+<p><strong>Menor que (&lt;) y Menor o igual que (&lt;=)</strong>: verifica si el primer operando es menor que el segundo.
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span> <span class="p">)</span> <span class="c1"># resultado es True</span>
+</code></pre></div>
+El tercer y último tipo de operadores que vamos a ver son los <strong>operadores lógicos</strong>. Estos nos permiten trabajar con valores de tipo booleano, y su resultado también lo será.</p>
+</li>
+<li>
+<p><strong>and</strong>: el operador <strong>and</strong> evalúa si el valor a la izquierda y el de la derecha son <strong>True</strong>, y en el caso de ser cierto, devuelve <strong>True</strong>. Si uno de los dos valores es <strong>False</strong>, el resultado será <strong>False</strong>. Es realmente un operador muy intuitivo que usamos en la vida real. Por ejemplo, si el semáforo está en verde y no vienen coches, cruzamos. Si ambas condiciones se cumplen, es decir que la variable <strong>semaforoVerde=True</strong> y la variable <strong>noVienenCoches=True</strong>, cruzaré, o visto de otra forma <strong>cruzar=(semaforoVerde and noVienenCoches)</strong>.</p>
+</li>
+<li>
+<p><strong>or</strong>: el operador <strong>or</strong> devuelve <strong>True</strong> cuando al menos uno de los elementos es igual a <strong>True</strong>. Es decir, evalúa si el valor a la izquierda o el de la derecha son <strong>True</strong>.</p>
+</li>
+<li>
+<p><strong>not</strong>: simplemente invierte <strong>True</strong> por <strong>False</strong> y <strong>False</strong> por <strong>True</strong>.</p>
+</li>
+</ul>
+<p>Es importante notar que el orden de aplicación de los operadores puede influir en el resultado, por lo que es importante tener muy claro su prioridad de aplicación. De mayor a menor prioridad, el primero sería <strong>not</strong>, seguido de <strong>and</strong> y <strong>or</strong>.</p>
+<p>Intenta averiguar el resultado de estos ejemplos sin ejecutar el programa:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">and</span> <span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
+<span class="linenos" data-linenos="2 "></span><span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
+<span class="linenos" data-linenos="3 "></span><span class="nb">print</span><span class="p">(</span><span class="mi">0</span> <span class="ow">and</span> <span class="ow">not</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="mi">0</span> <span class="ow">or</span> <span class="mi">1</span> <span class="ow">and</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="expresiones-compuestas">Expresiones compuestas<a class="headerlink" href="#expresiones-compuestas" title="Permanent link">&para;</a></h3>
+<p>Las <strong>expresiones compuestas</strong> en Python combinan múltiples operadores y operandos para realizar cálculos más complejos. Es importante entender el <strong>orden de precedencia de los operadores</strong> para evaluar correctamente estas expresiones. Python sigue reglas de precedencia similares a las matemáticas tradicionales, donde las operaciones dentro de paréntesis se evalúan primero, seguidas por exponenciación, multiplicación/división/módulo, y finalmente suma/resta.</p>
+<ul>
+<li><strong>Paréntesis ()</strong>: Evalúan las expresiones dentro de los paréntesis primero.</li>
+<li><strong>Exponenciación **</strong>.</li>
+<li><strong>Signos + y –</strong>: Signos unarios antes de una variable (por ejemplo, -a).</li>
+<li><strong>Multiplicación *, división /, división entera //, y módulo %</strong>.</li>
+<li><strong>Suma + y resta –</strong>.</li>
+<li><strong>Operadores de comparación</strong>: ==, !=, &gt;, &lt;, &gt;=, &lt;=.</li>
+<li><strong>Operadores lógicos</strong> not, and, or.</li>
+</ul>
+<p>Veamos un ejemplo de expresiones compuestas:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>\<span class="c1"># Variables iniciales</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="linenos" data-linenos="3 "></span><span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="linenos" data-linenos="4 "></span><span class="n">c</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="linenos" data-linenos="5 "></span><span class="n">d</span> <span class="o">=</span> <span class="mi">4</span>
+</code></pre></div>
+<h1 id="expresion-compuesta">Expresión compuesta<a class="headerlink" href="#expresion-compuesta" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> \<span class="o">*</span> <span class="n">c</span> <span class="o">/</span> <span class="n">d</span>  <span class="c1"># Primero (a + b) = 8, luego 8 \* c = 16, y finalmente 16 / d = 4.0</span>
+</code></pre></div>
+<h1 id="expresion-mas-compleja">Expresión más compleja<a class="headerlink" href="#expresion-mas-compleja" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">resultado</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> \<span class="o">*</span> <span class="n">c</span> \<span class="o">*</span>\<span class="o">*</span> <span class="n">d</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Precedencia: c \*\* d = 16, b \* 16 = 48, a / b = 1.6667, a + 48 = 53, y finalmente 53 - 1.6667 = 51.3333</span>
+</code></pre></div>
+<h4 id="expresiones-con-cadenas-de-texto">Expresiones con cadenas de texto<a class="headerlink" href="#expresiones-con-cadenas-de-texto" title="Permanent link">&para;</a></h4>
+<p>Las cadenas de texto también pueden ser manipuladas usando operadores. Python permite <strong>concatenar</strong> (unir) cadenas usando el operador <strong>+</strong>, y repetir cadenas usando el operador <strong>*</strong>. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>\<span class="c1"># Concatenación de cadenas</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan&quot;</span>
+<span class="linenos" data-linenos="3 "></span><span class="n">saludo</span> <span class="o">=</span> <span class="s2">&quot;Hola, &quot;</span> <span class="o">+</span> <span class="n">nombre</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>  <span class="c1"># saludo es &quot;Hola, Juan!&quot;</span>
+</code></pre></div>
+<h1 id="repeticion-de-cadenas">Repetición de cadenas<a class="headerlink" href="#repeticion-de-cadenas" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">repetir</span> <span class="o">=</span> <span class="s2">&quot;Hola&quot;</span> \<span class="o">*</span> <span class="mi">3</span>  <span class="c1"># repetir es &quot;HolaHolaHola&quot;</span>
+</code></pre></div>
+<h3 id="1124-interaccion-con-el-usuario">11.2.4. Interacción con el usuario<a class="headerlink" href="#1124-interaccion-con-el-usuario" title="Permanent link">&para;</a></h3>
+<p>Cuando programamos, la interacción con el usuario es muy importante porque nos permite mostrarle datos al usuario (output), y también leer datos que el usuario introduce por el teclado (input). Python facilita enormemente este proceso, haciendo de las tareas de entrada/salida un trabajo realmente simle.</p>
+<h4 id="mostrar-datos-en-pantalla">Mostrar datos en pantalla<a class="headerlink" href="#mostrar-datos-en-pantalla" title="Permanent link">&para;</a></h4>
+<p>Python utiliza la función <strong><em>print()</em></strong> para mostrar datos en la pantalla. Esta función es muy flexible y permite mostrar texto, variables y resultados de expresiones de manera fácil.</p>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nb">print</span><span class="p">(</span><span class="n">valor1</span><span class="p">,</span> <span class="n">valor2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">)</span>
+</code></pre></div>
+Donde:</p>
+<ul>
+<li><strong><em>valor1</em></strong>, <strong><em>valor2</em></strong>, …: los valores que se desean mostrar. Pueden ser cadenas de texto, números, variables, etc.</li>
+<li><strong>sep</strong>: especifica el separador entre los valores (por defecto es un espacio).</li>
+<li><strong>end</strong>: especifica lo que se muestra al final de la salida (por defecto es un salto de línea).</li>
+</ul>
+<p>Veamos un ejemplo práctico de su uso:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>\<span class="c1"># Mostrar una cadena de texto</span>
+<span class="linenos" data-linenos="2 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola, mundo&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h1 id="mostrar-multiples-valores">Mostrar múltiples valores<a class="headerlink" href="#mostrar-multiples-valores" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;Juan&quot;</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="linenos" data-linenos="3 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nombre:&quot;</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">&quot;Edad:&quot;</span><span class="p">,</span> <span class="n">edad</span><span class="p">)</span>
+</code></pre></div>
+<h1 id="cambiar-el-separador-y-el-final-de-linea">Cambiar el separador y el final de línea<a class="headerlink" href="#cambiar-el-separador-y-el-final-de-linea" title="Permanent link">&para;</a></h1>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="s2">&quot;genial&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;!</span><span class="se">\\</span><span class="s1">n&#39;</span><span class="p">)</span>
+</code></pre></div>
+A veces, podemos necesitar usar la sintaxis F-strings, que nos facilita la escritura de salidas en pantalla:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;Ana&quot;</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="linenos" data-linenos="3 "></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nombre: </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">, Edad: </span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="obtener-datos-de-teclado">Obtener datos de teclado<a class="headerlink" href="#obtener-datos-de-teclado" title="Permanent link">&para;</a></h4>
+<p>La función <strong><em>input()</em></strong> se utiliza para leer datos introducidos por el usuario desde el teclado. Esta función siempre devuelve una cadena de texto, por lo que es necesario convertir los datos al tipo adecuado si se espera un valor numérico.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>\<span class="c1"># Leer una cadena de texto</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce tu nombre: &quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="3 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola&quot;</span><span class="p">,</span> <span class="n">nombre</span><span class="p">)</span>
+</code></pre></div>
+<h1 id="leer-un-numero-entero">Leer un número entero<a class="headerlink" href="#leer-un-numero-entero" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce tu edad: &quot;</span><span class="p">))</span>
+<span class="linenos" data-linenos="2 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tienes &quot;</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="s2">&quot; años&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h1 id="leer-un-numero-de-punto-flotante">Leer un número de punto flotante<a class="headerlink" href="#leer-un-numero-de-punto-flotante" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce tu altura en metros: &quot;</span><span class="p">))</span>
+<span class="linenos" data-linenos="2 "></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mides&quot;</span><span class="p">,</span> <span class="n">altura</span><span class="p">,</span> <span class="s2">&quot; metros&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="1125-estructuras-de-control">11.2.5. Estructuras de control<a class="headerlink" href="#1125-estructuras-de-control" title="Permanent link">&para;</a></h3>
+<p>Las estructuras de control nos permiten dirigir el flujo de ejecución del programa según ciertas condiciones. Incluyen las estructuras condicionales, repetitivas y de salto. Estas estructuras proporcionan la capacidad de tomar decisiones, repetir bloques de código y manejar situaciones excepcionales de manera organizada y eficiente.</p>
+<h4 id="estructuras-condicionales">Estructuras condicionales<a class="headerlink" href="#estructuras-condicionales" title="Permanent link">&para;</a></h4>
+<p>Las estructuras condicionales <strong>permiten ejecutar bloques de código solo si se cumplen ciertas condiciones</strong>. Python utiliza las palabras clave <strong><em>if</em></strong>, <strong><em>elif</em></strong> (abreviatura de «else if») y <strong><em>else</em></strong> para definir estas condiciones.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="linenos" data-linenos="2 "></span>
+<span class="linenos" data-linenos="3 "></span><span class="k">if</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+<span class="linenos" data-linenos="4 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="5 "></span><span class="k">elif</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">:</span>
+<span class="linenos" data-linenos="6 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eres un adulto&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="7 "></span><span class="k">else</span><span class="p">:</span>
+<span class="linenos" data-linenos="8 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Jubilado! Enhorabuena&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="estructuras-repetitivas">Estructuras repetitivas<a class="headerlink" href="#estructuras-repetitivas" title="Permanent link">&para;</a></h4>
+<p>Las estructuras repetitivas nos permiten <strong>repetir un bloque de código las veces que necesitemos</strong>. Popularmente se les conoce como <strong>bucles</strong>, y en Python tenemos dos: los bucles <strong><em>for</em></strong> y los bucles <strong><em>while</em></strong>.</p>
+<p>El bucle <strong><em>for</em></strong> se utiliza para repetir un bloque de código <strong>cuando sabemos exactamente cuantas veces queremos repetirlo</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="linenos" data-linenos=" 2 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>  <span class="c1"># Muestra 0 1 2 3 4</span>
+<span class="linenos" data-linenos=" 3 "></span>
+<span class="linenos" data-linenos=" 4 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">):</span>
+<span class="linenos" data-linenos=" 5 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 5 6</span>
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+<span class="linenos" data-linenos=" 8 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 5 7 9</span>
+<span class="linenos" data-linenos=" 9 "></span>
+<span class="linenos" data-linenos="10 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+<span class="linenos" data-linenos="11 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 9 7 5 3</span>
+</code></pre></div>
+<p>Como puedes ver por el fragmento de código anterior, <strong><em>range</em></strong> usa 1, 2 o 3 parámetros. Cuando usa uno, el bloque se repetirá el número de veces que se indique -1 (sin incluir al número). Cuando se usan dos parámetros, el primero indica el punto inicial y el segundo el punto final (sin incluir este último). Cuando se usan tres parámetros, los dos primeros funcionan igual y el tercero indica el salto de avance desde el primero al siguiente hasta llegar al último.</p>
+<p>EL bucle <strong><em>while</em></strong>, a diferencia del <strong><em>for</em></strong>, <strong>se repite siempre que una condición especificada sea verdadera</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos" data-linenos="2 "></span>
+<span class="linenos" data-linenos="3 "></span><span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+<span class="linenos" data-linenos="4 "></span>    <span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
+<span class="linenos" data-linenos="5 "></span>    <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+<h4 id="estructuras-de-salto">Estructuras de salto<a class="headerlink" href="#estructuras-de-salto" title="Permanent link">&para;</a></h4>
+<p>Permiten alterar el flujo normal de ejecución de las estructuras de control.</p>
+<p><strong><em>break</em></strong>, se utiliza para terminar el bucle actual de manera anticipada.</p>
+<p>for numero in range(10):
+    if numero == 5:
+        break
+    print(numero) # Muestra 0 1 2 3 4</p>
+<p><strong><em>continue</em></strong>, se usa para omitir el resto del bloque de código en la iteración actual y pasar a la siguiente iteración del bucle.</p>
+<p>for numero in range(10):
+    if numero == 5:
+        continue
+    print(numero) # Muestra 0 1 2 3 4 6 7 8 9</p>
+<p>Ahora, ya tienes una base suficiente como para empezar a resolver algunos problemas sencillos. A continuación, encontrarás los enunciados de 20 problemas con sus respectivas soluciones. Si quieres aprender, te recomiendo que intentes resolver cada problema una y otra vez por ti mismo, y sólo acudas a la solución cuando llegues a un callejón sin salida. <strong>Aprender a programar no es rápido ni sencillo, sólo se logra con paciencia y tesón</strong>.</p>
+<h4 id="ejercicios-resueltos-de-estructuras-de-control">Ejercicios resueltos de estructuras de control<a class="headerlink" href="#ejercicios-resueltos-de-estructuras-de-control" title="Permanent link">&para;</a></h4>
+<p>1. Escribe un programa que pida al usuario su edad y determine si es mayor de edad o no.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-1.png" /></p>
+<p>2. Escribe un programa que pida un número al usuario y determine si es par o impar.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-2.png" /></p>
+<p>3. Escribe un programa que pida dos números al usuario y muestre cuál es mayor.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-3.png" /></p>
+<p>4. Escribe un programa que pida un número al usuario y determine si es positivo, negativo o cero.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-4.png" /></p>
+<p>5. Escribe un programa que pida un número del 1 al 7 y muestre el día de la semana correspondiente.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-5.png" /></p>
+<p>6. Escribe un programa que pida una temperatura en grados Celsius y la convierta a Fahrenheit.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-6.png" /></p>
+<p>7. Escribe un programa que pida una palabra y la muestre al revés.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-7.png" /></p>
+<p>8. Escribe un programa que pida un número y muestre su tabla de multiplicar del 1 al 10.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-8.png" /></p>
+<p>9. Escribe un programa que pida un número y calcule la suma de todos los números desde 1 hasta ese número.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-9.png" /></p>
+<p>10. Escribe un programa que pida un número y calcule su factorial.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-10.png" /></p>
+<p>11. Escribe un programa que pida una palabra y determine si es un palíndromo (se lee igual de izquierda a derecha que de derecha a izquierda).</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-11.png" /></p>
+<p>12. Escribe un programa que pida un número y muestre si es un número primo o no.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-12.png" /></p>
+<p>13. Escribe un programa que pida un número y muestre los números impares desde 1 hasta ese número.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-13.png" /></p>
+<p>14. Escribe un programa que pida una frase y cuente cuántas vocales tiene.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-14.png" /></p>
+<p>15. Escribe un programa que pida un número y muestre todos los números pares desde 1 hasta ese número.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-15.png" /></p>
+<p>16. Escribe un programa que pida una cantidad de segundos y la convierta a horas, minutos y segundos.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-16.png" /></p>
+<p>17. Escribe un programa que pida una nota (0-10) y muestre si está suspenso (menos de 5), aprobado (5-6), bien (7-8), notable (9) o sobresaliente (10).</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-17.png" /></p>
+<p>18. Escribe un programa que pida al usuario un número y muestre si es un número Armstrong (un número igual a la suma de sus propios dígitos cada uno elevado a la potencia de la cantidad de dígitos).</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-18.png" /></p>
+<p>19. Escribe un programa que pida dos números y muestre su máximo común divisor (MCD).</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-19.png" /></p>
+<p>20. Escribe un programa que pida un número y muestre la secuencia de Fibonacci hasta ese número.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/05/solucion-al-ejercicio-20.png" /></p>
+<h3 id="1126-modularizacion">11.2.6. Modularización<a class="headerlink" href="#1126-modularizacion" title="Permanent link">&para;</a></h3>
+<p>La <strong>modularización</strong> es una técnica fundamental en la programación que permite dividir un programa en partes más pequeñas, manejables y reutilizables, conocidas como <strong>módulos o funciones</strong>. Esta práctica mejora la legibilidad y mantenibilidad del código, y facilita la colaboración entre múltiples desarrolladores.</p>
+<p>Cada módulo tiene una funcionalidad definida y puede ser desarrollado y probado de manera independiente.</p>
+<p>Desde el punto de vista de la escritura de código, las funciones son bloques de código que realizan una tarea específica y se pueden invocar -ser llamadas- desde otras partes del programa. En Python se definen utilizando la palabra clave <strong><em>def</em></strong> seguida del nombre de la función y paréntesis que pueden incluir parámetros.</p>
+<p># Esquema conceptual de la definición de una función
+def nombre_de_la_funcion(parametro1, parametro2):
+    # Bloque de código
+    return valor_de_retorno</p>
+<p>Por ejemplo, esta función saluda al usuario que hayamos indicado en el parámetro <strong><em>nombre</em></strong>:</p>
+<p>def saludar(nombre):
+    print(f"Hola, {nombre}")</p>
+<p>saludar("Ana")  # Output: Hola, Ana</p>
+<p>Como hemos indicado más arriba, las funciones pueden aceptar <strong>parámetros</strong>, que son variables que se pasan a la función para que pueda utilizarlas en su bloque de código. Además, las funciones pueden devolver un valor utilizando la palabra clave <strong><em>return</em></strong>.</p>
+<p>def sumar(a, b):
+    return a + b</p>
+<p>resultado = sumar(5, 3)
+print(resultado)  # Salida: 8</p>
+<p>Veamos cuál sería el flujo de ejecución del programa anterior:</p>
+<ul>
+<li>El ordenador lee las líneas 1 y 2, pero <strong>no las ejecuta</strong> (ya que la definición de una función sólo se ejecuta cuando la función es llamada).</li>
+<li>Se ejecuta la línea 4, de derecha a izquierda, por tanto, lo primero que se hace es llamar a <strong><em>sumar(5,3)</em></strong>.</li>
+<li>Se busca la definición de la función <strong><em>sumar</em></strong>, se encuentra en la línea 1, y se sustituyen los parámetros por los valores, es decir, <strong><em>a=5</em></strong> y <strong><em>b=3</em></strong>.</li>
+<li>Con los parámetros establecidos se entra a ejecutar el bloque interior de la función: <strong><em>return 5+3</em></strong>.</li>
+<li>La función devuelve <strong><em>8</em></strong> y el programa vuelve al punto en el que se llamó a la función, línea 4, y como consecuencia de ello se hace <strong><em>resultado=8</em></strong>.</li>
+<li>Se ejecuta la línea 5, mostrándose <strong><em>8</em></strong> en pantalla.</li>
+</ul>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/Blank-diagram.png" /></p>
+<p>Además de lo anterior, cuando se trabajan con funciones es muy importante entender el <strong>alcance de las variables</strong>.</p>
+<p>El alcance de una variable (<strong>«<em>scope</em>»</strong>) determina dónde puede ser utilizada dentro del código.</p>
+<p>Las <strong>variables definidas dentro de una función</strong> tienen un alcance <strong>LOCAL</strong>, es decir, solo pueden ser utilizadas dentro de esa función. Las <strong>variables definidas fuera de cualquier función</strong> tienen un alcance <strong>GLOBAL</strong> y pueden ser utilizadas en cualquier parte del programa.</p>
+<p>Por ejemplo, en el siguiente programa, la variable <strong><em>mensaje</em></strong> se ha creado en el interior de la función (línea 2), por tanto, cuando la usamos en la línea 6 (fuera de la función), nos va a generar un error.</p>
+<p>def mostrar_mensaje():
+    mensaje = "Hola desde la función"
+    print(mensaje)</p>
+<p>mostrar_mensaje()
+print(mensaje)  # Esto generará un error porque 'mensaje' es una variable local</p>
+<p>Cuando nuestros programas empiezan a crecer, acumulando cientos o miles de líneas de código, por mucho que tengamos nuestro código organizado en funciones, seguirá siendo algo muy difícil de mantener. Por eso, podemos ir un paso más allá en la organización del código, usando <strong>módulos</strong>.</p>
+<p>Los módulos son archivos que contienen definiciones de funciones, de esta manera, podemos aliviar la cantidad de código que tenemos en nuestro programa principal, y cuando necesitemos usar una función, simplemente importamos el archivo que contiene su definición.</p>
+<p>Por ejemplo, vamos a crear un archivo llamado <strong><em>matematicas.py</em></strong> donde incluiremos la definición de algunas funciones:</p>
+<p>def sumar(a, b):
+    return a + b</p>
+<p>def restar(a, b):
+    return a - b</p>
+<p>Si luego, en nuestro programa principal necesitamos usar las funciones <strong><em>sumar</em></strong> o <strong><em>restar</em></strong>, o cualquier otra incluida en ese módulo, lo importamos y lo usamos.</p>
+<p>import matematicas</p>
+<p>resultado_suma = matematicas.sumar(10, 5)
+resultado_resta = matematicas.restar(10, 5)</p>
+<p>print(f"Suma: {resultado_suma}")
+print(f"Resta: {resultado_resta}")</p>
+<p>Además, esa instrucción <strong><em>import</em></strong> no sólo nos permite importar un módulo que hayamos creado nosotros, sino cualquier módulo sea quien sea el propietario. Y aquí es donde radica una de los mayores atractivos de Python: dispone de un catálogo de módulos extremadamente potentes que podemos usar para programar cualquier cosa.</p>
+<p>Por ejemplo, usando el módulo <strong>fpdf</strong> podemos crear un PDF con muy pocas líneas de código:</p>
+<p>Para poder usar un módulo de terceros, debes instalarlo previamente ejecutando en la consola:<br />
+<strong><em>pip install fpdf</em></strong></p>
+<p>from fpdf import FPDF</p>
+<p>pdf = FPDF(orientation='P', unit='mm', format='A4')
+pdf.add_page()
+pdf.set_font('Arial','',16)
+pdf.text(x=60,y=50,txt='Mi primer PDF')
+pdf.output('unpdf.pdf','F')</p>
+<p>Si ahora vamos al directorio donde se encuentra nuestro archivo de código, veremos cómo se ha creado un archivo nuevo llamado <strong>unpdf.pdf</strong> con este contenido:</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/image-1024x539.png" /></p>
+<p>Así de sencillo es crear un PDF usando un programa escrito por nosotros mismos. Esto tiene innumerables utilidades para automatizar procesos, como por ejemplo: generar diplomas, boletines de notas, informes, imprimir estadísticas, etc…</p>
+<p>Otro ejemplo muy interesante podría ser el de visualizar gráficamente datos que tengamos recogidos por sensores. Un módulo muy popular que nos permite hacer esto es <strong>matplotlib</strong>. Vamos a usarlo para graficar las temperaturas de la última semana en Madrid y Barcelona:</p>
+<p>import matplotlib.pyplot as plt</p>
+<p>fig, ax = plt.subplots()
+dias = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
+temperaturas = {'Madrid':[28.5, 30.5, 31, 30, 28, 27.5, 30.5], 'Barcelona':[24.5, 25.5, 26.5, 25, 26.5, 24.5, 25]}
+ax.plot(dias, temperaturas['Madrid'], color = 'tab:purple')
+ax.plot(dias, temperaturas['Barcelona'], color = 'tab:green')
+plt.show()</p>
+<p>El resultado tras ejecutar el programa anterior, sería:</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/image-1.png" /></p>
+<p>Como ves, podemos hacer cualquier cosa que se nos ocurra si dominamos la sintaxis de Python para importar módulos y conocemos las instrucciones que nos permiten programar los módulos que importamos (esto último debes consultarlo en la web de cada módulo). Puedes revisar <strong><a href="https://aprendeconalf.es/docencia/python/manual/matplotlib/">este sencillo manual de matplotlib</a></strong> para que compruebes de primera mano lo sencillo que es.</p>
+<h3 id="1127-estructuras-de-datos">11.2.7. Estructuras de datos<a class="headerlink" href="#1127-estructuras-de-datos" title="Permanent link">&para;</a></h3>
+<p>Las <strong>estructuras de datos</strong> son una parte fundamental de la programación, ya que permiten organizar y gestionar de manera eficiente los datos en la memoria. En Python, existen varias estructuras de datos integradas que son ampliamente utilizadas debido a su flexibilidad. Aunque las principales estructuras de datos que se suelen manejar incluyen listas, tuplas, conjuntos, diccionarios y clases, nosotros por los conocimientos que tenemos de programación y los usos que vamos a darle, sólo aprenderemos lo básico de listas y diccionarios.</p>
+<h4 id="listas">Listas<a class="headerlink" href="#listas" title="Permanent link">&para;</a></h4>
+<p>Las <strong>listas</strong> son <strong>colecciones ordenadas y mutables de elementos</strong>. Esto significa que se pueden modificar (agregar, eliminar o cambiar elementos) después de haber sido creadas. Las listas en Python se definen utilizando corchetes <strong>[]</strong> y los elementos se separan por <strong>comas</strong>.</p>
+<p># Crear una lista
+frutas = ["manzana", "platano", "cereza"]</p>
+<h1 id="acceder-a-elementos-de-la-lista">Acceder a elementos de la lista<a class="headerlink" href="#acceder-a-elementos-de-la-lista" title="Permanent link">&para;</a></h1>
+<p>print(frutas[0])  # Salida: manzana
+print(frutas[1])  # Salida: banana</p>
+<h1 id="modificar-un-elemento-de-la-lista">Modificar un elemento de la lista<a class="headerlink" href="#modificar-un-elemento-de-la-lista" title="Permanent link">&para;</a></h1>
+<p>frutas[1] = "kiwi"
+print(frutas)  # Salida: ['manzana', 'kiwi', 'cereza']</p>
+<p>También disponemos de muchas funciones integradas en el lenguaje, que nos permiten realizar operaciones comunes con las listas.</p>
+<p># Agregar elementos
+frutas.append("naranja")
+print(frutas)  # Salida: ['manzana', 'kiwi', 'cereza', 'naranja']</p>
+<h1 id="eliminar-elementos">Eliminar elementos<a class="headerlink" href="#eliminar-elementos" title="Permanent link">&para;</a></h1>
+<p>frutas.remove("kiwi")
+print(frutas)  # Salida: ['manzana', 'cereza', 'naranja']</p>
+<h1 id="insertar-elementos-en-una-posicion-especifica">Insertar elementos en una posición específica<a class="headerlink" href="#insertar-elementos-en-una-posicion-especifica" title="Permanent link">&para;</a></h1>
+<p>frutas.insert(1, "pera")
+print(frutas)  # Salida: ['manzana', 'pera', 'cereza', 'naranja']</p>
+<h1 id="obtener-la-longitud-de-la-lista">Obtener la longitud de la lista<a class="headerlink" href="#obtener-la-longitud-de-la-lista" title="Permanent link">&para;</a></h1>
+<p>longitud = len(frutas)
+print(longitud)  # Salida: 4</p>
+<p>Por último, necesitamos saber cómo podemos recorrer una lista para poder realizar comprobaciones u operaciones sobre cada uno de los elementos que contiene.</p>
+<p># Definir una lista
+frutas = ["manzana", "pera", "cereza"]</p>
+<h1 id="recorrer-la-lista-con-un-bucle-for">Recorrer la lista con un bucle for<a class="headerlink" href="#recorrer-la-lista-con-un-bucle-for" title="Permanent link">&para;</a></h1>
+<p>for fruta in frutas:
+    print(fruta)</p>
+<p>En este ejemplo, el bucle <strong><em>for</em></strong> itera sobre cada elemento de la lista <strong><em>frutas</em></strong>, asignando cada elemento a la variable <strong><em>fruta</em></strong> en cada iteración, y luego imprime el valor de <strong><em>fruta</em></strong>.</p>
+<p>Esto mismo también puede hacerse recorriendo la lista por medio de un índice que indica la posición que ocupa cada elemento en la lista:</p>
+<p># Definir una lista
+frutas = ["manzana", "pera", "cereza"]</p>
+<h1 id="recorrer-la-lista-con-un-bucle-for_1">Recorrer la lista con un bucle for<a class="headerlink" href="#recorrer-la-lista-con-un-bucle-for_1" title="Permanent link">&para;</a></h1>
+<p>for indice in range(0,len(frutas)):
+    print(frutas[indice])</p>
+<p>¿Cuándo debes usar un método u otro? Te lo dirá las necesidades que tengas en cada momento para resolver un problema concreto.</p>
+<h4 id="diccionarios">Diccionarios<a class="headerlink" href="#diccionarios" title="Permanent link">&para;</a></h4>
+<p>Los <strong>diccionarios</strong> son <strong>colecciones desordenadas de pares clave-valor</strong>. Cada clave debe ser única, y se utiliza para acceder al valor asociado. Los diccionarios se definen utilizando llaves <strong>{}</strong> y pares clave-valor separados por dos puntos <strong>:</strong>.</p>
+<p>Por ejemplo vamos a crear un diccionario <strong><em>persona</em></strong> que almacene los datos personales:</p>
+<p># Crear un diccionario
+persona = {
+    "nombre": "Juan",
+    "edad": 30,
+    "ciudad": "Madrid"
+}</p>
+<h1 id="acceder-a-valores-por-clave">Acceder a valores por clave<a class="headerlink" href="#acceder-a-valores-por-clave" title="Permanent link">&para;</a></h1>
+<p>print(persona["nombre"])  # Salida: Juan
+print(persona["edad"])  # Salida: 30</p>
+<h1 id="modificar-un-valor">Modificar un valor<a class="headerlink" href="#modificar-un-valor" title="Permanent link">&para;</a></h1>
+<p>persona["edad"] = 31
+print(persona)  # Salida: {'nombre': 'Juan', 'edad': 31, 'ciudad': 'Madrid'}</p>
+<h1 id="agregar-un-nuevo-par-clave-valor">Agregar un nuevo par clave-valor<a class="headerlink" href="#agregar-un-nuevo-par-clave-valor" title="Permanent link">&para;</a></h1>
+<p>persona["profesion"] = "Ingeniero"
+print(persona)  # Salida: {'nombre': 'Juan', 'edad': 31, 'ciudad': 'Madrid', 'profesion': 'Ingeniero'}</p>
+<h1 id="eliminar-un-par-clave-valor">Eliminar un par clave-valor<a class="headerlink" href="#eliminar-un-par-clave-valor" title="Permanent link">&para;</a></h1>
+<p>del persona["ciudad"]
+print(persona)  # Salida: {'nombre': 'Juan', 'edad': 31, 'profesion': 'Ingeniero'}</p>
+<p>De la misma manera que hicimos para las listas, también podemos recorrer los diccionarios. Recorrer un diccionario implica iterar sobre sus pares clave-valor. En Python, esto se puede hacer utilizando el método <strong><em>items()</em></strong>, que devuelve una vista de pares clave-valor del diccionario.</p>
+<p># Definir un diccionario
+persona = {
+    "nombre": "Juan",
+    "edad": 30,
+    "ciudad": "Madrid"
+}</p>
+<h1 id="recorrer-el-diccionario-con-un-bucle-for">Recorrer el diccionario con un bucle for<a class="headerlink" href="#recorrer-el-diccionario-con-un-bucle-for" title="Permanent link">&para;</a></h1>
+<p>for clave, valor in persona.items():
+    print(f"{clave}: {valor}")</p>
+<p>En este ejemplo, el método <strong><em>items()</em></strong> se utiliza para obtener una vista de pares clave-valor del diccionario <strong><em>persona</em></strong>. El bucle <strong><em>for</em></strong> itera sobre cada par, asignando la clave a <strong><em>clave</em></strong> y el valor a <strong><em>valor</em></strong>, y luego imprime ambos.</p>
+<p>Pero puede que necesitemos recorrer sólo claves o sólo valores. Para esos casos también disponemos de métodos que agilizan estos procesos:</p>
+<p># Recorrer solo las claves del diccionario
+for clave in persona.keys():
+    print(clave)</p>
+<h1 id="recorrer-solo-los-valores-del-diccionario">Recorrer solo los valores del diccionario<a class="headerlink" href="#recorrer-solo-los-valores-del-diccionario" title="Permanent link">&para;</a></h1>
+<p>for valor in persona.values():
+    print(valor)</p>
+<p>En el primer ejemplo, el método <strong><em>keys()</em></strong> se utiliza para obtener una vista de las claves del diccionario <strong><em>persona</em></strong>. En el segundo ejemplo, el método <strong><em>values()</em></strong> se utiliza para obtener una vista de los valores del diccionario <strong><em>persona</em></strong>.</p>
+<h4 id="ejercicios-resueltos-de-estructuras-de-datos">Ejercicios resueltos de estructuras de datos<a class="headerlink" href="#ejercicios-resueltos-de-estructuras-de-datos" title="Permanent link">&para;</a></h4>
+<p>1. Escribe un programa que calcule la suma de todos los elementos de esta lista [4, 12, 15, 9, 31].</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed01.png" /></p>
+<p>2. Escribe un programa que encuentre el mayor número de esta lista [4, 12, 65, 9, 31].</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed02.png" /></p>
+<p>3. Escribe un programa que calcule cuántos elementos hay en esta lista [4, 12, 15, 9, 31].</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed03.png" /></p>
+<p>4. Escribe un programa que muestre solo los número impares de esta lista [4, 12, 15, 9, 31].</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed04.png" /></p>
+<p>5. Escribe un programa que muestre esta lista invertida [4, 12, 15, 9, 31].</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed05.png" /></p>
+<p>6. Escribe un programa que cree un diccionario con el nombre, la edad y la ciudad de una persona, obteniendo estos datos del usuario por teclado, y luego muestre el diccionario..</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed06.png" /></p>
+<p>7. Amplía el ejercicio anterior para que se le pida al usuario una nueva edad, modifique la edad que tenía la persona y muestre nuevamente el diccionario actualizado.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed07.png" /></p>
+<p>8. Amplía el ejercicio anterior para que añada al diccionario de la persona su dirección de correo electrónico, y muestre el diccionario actualizado.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed08.png" /></p>
+<p>9. Amplía el ejercicio anterior para que se le pida al usuario una clave y elimine ese par clave-valor del diccionario persona. Muestra el diccionario actualizado.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed09.png" /></p>
+<p>10. Amplía el ejercicio anterior para mostrar en pantalla sólo los valores del diccionario.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/06/ed10-1.png" /></p>
+<h2 id="113-depuracion">11.3. Depuración<a class="headerlink" href="#113-depuracion" title="Permanent link">&para;</a></h2>
+<p>Una vez que hemos diseñado el código de nuestra aplicación, es posible que observemos algún comportamiento erróneo o alguna inconsistencia. </p>
+<p>En esta parte del desarrollo de la aplicación, es fundamental encontrar y corregir errores –<em>bugs</em>– en el código. De ello se encarga la <strong>depuración o «<em>debugging</em>»</strong>. Un proceso efectivo de depuración asegura que el software sea confiable, eficiente y libre de fallos que puedan afectar su funcionamiento.</p>
+<p>La depuración implica examinar el código, identificar dónde y por qué ocurren los errores, y corregirlos. Es como ser un detective en el mundo de la programación: se buscan pistas (errores), se analizan las causas (el porqué de los errores) y se resuelven los problemas (se corrigen los errores).</p>
+<p><strong>(1)</strong> En el mejor de los casos, sabremos que nuestro código presenta errores porque el propio entorno de desarrollo -IDE, como PyCharm- nos lo va a marcar con <strong>llamativos mensajes en rojo</strong>, son los errores de sintaxis.</p>
+<p><strong>(2)</strong> En otras ocasiones, sabremos que nuestro programa contiene errores, porque a pesar de que el entorno de desarrollo no nos muestra errores de sintaxis, lo que obtenemos no tiene sentido o no son datos coherentes. Inicialmente <strong>no sabemos donde está el error, pero sabemos que algo no está funcionando correctamente</strong>.</p>
+<p><strong>(3)</strong> Pero, sin duda, los errores más temibles para todos los programadores, son los llamados errores intermitentes. Son aquellos que <strong>no se producen en cada ejecución del programa, sino sólo bajo ciertas condiciones especiales</strong>. Encontrar estos últimos es una tarea tediosa que consume mucho tiempo y esfuerzo, por eso es fundamental ir realizando pruebas a nuestro código para intentar minimizarlos.</p>
+<p>Como hemos avanzado, casi todos los IDE incorporan ya funciones para la depuración. El módulo de nuestro entorno de desarrollo encargado de esta tarea se llama <strong>«<em>debugger</em>»</strong>.</p>
+<p>En PyCharm, podemos acceder a las herramientas de depuración con el icono del «bicho» -bug- (situado en la parte superior derecha del programa):</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/01/image-154.png" /></p>
+<p>Cuando pulsamos en la ejecución del programa en modo depuración, se activan comprobaciones adicionales que nos permiten comprobar si todo va bien. Pero, ciertos errores o inconsistencias no serán detectados, por lo que deberemos hacer una <strong>ejecución manual paso a paso</strong>.</p>
+<p>Una buena manera de hacerlo es situar un <strong>«<em>breakpoint</em>»</strong> o <strong>punto de ruptura</strong>. Se trata de marcar una línea de código donde queremos que se pare la ejecución del programa. Esto lo hacemos pulsando con el ratón junto al número de línea que queremos marcar (aparecerá un punto rojo). Observa la línea de código número 2 de la imagen.</p>
+<p>Una vez marcadas las líneas donde queremos que el programa pare, lo ejecutamos en modo depuración. El programa comenzará a ejecutarse y se parará en cada breakpoint. Para avanzar podemos utilizar una variedad de iconos disponibles. El primero de ellos -señalado con flecha rosa- nos permite avanzar línea a línea. Es decir, cada vez que lo pulsemos el programa ejecutará la siguiente instrucción prevista en nuestro código.</p>
+<p>Las flechas moradas indican los botones que podemos pulsar si queremos parar la ejecución o terminarla hasta el final. Si queremos que termine, debemos retirar los breakpoints.</p>
+<p>Pero, la zona más importante de todas, es la que aparece rodeada de amarillo, el <strong>inspector de variables</strong>. En esta zona, veremos cómo aparecen los nombres de las variables y otras estructuras de datos «visibles» en ese momento de la ejecución, y los valores que tienen en ese punto. Así, conforme vamos ejecutando manualmente nuestro programa paso a paso, podemos ir comprobando si los valores que van recogiendo las variables son los correctos o no.</p>
+<p><img alt="" src="https://lopegonzalez.es/wp-content/uploads/2024/01/image-155-1024x611.png" /></p>
+<p>Estas herramientas de depuración -y la ejecución paso a paso de programas-, no son solo útiles para detectar errores o corregir inconsistencias, sino que son una excelente manera de entender la ejecución de los programas. </p>
+<p>Cuando llega a nuestras manos un algoritmo, a primera vista complejo, podemos desentrañar todos sus misterios haciéndole una ejecución paso a paso con el depurador para ver cómo funciona.</p>
+<p>Como siempre, debemos recordar, que el proceso de desarrollo de software es una tarea realmente compleja. Cuando tenemos un programa con miles de líneas de código distribuidas en cientos de archivos interrelacionados, encontrar un error, aunque sea utilizando un depurador es un trabajo realmente complejo que suele consumir una cantidad ingente de recursos tanto en tiempo como en costes económicos.</p>
+<p><strong>Por eso, siempre es una regla de oro, seguir las recomendaciones, las buenas prácticas, los patrones de diseño y todos aquellos protocolos probados que nos previenen de la mayor parte de los errores que dan al traste con el éxito de nuestros proyectos.</strong> </p>
+<h3 id="1144-documentacion">11.4.4. Documentación<a class="headerlink" href="#1144-documentacion" title="Permanent link">&para;</a></h3>
+<p>Una buena documentación facilita la comprensión del código y su mantenimiento a largo plazo, además permite que sea posible la colaboración efectiva entre los miembros del equipo.</p>
+<p>Por ejemplo, en un proyecto de desarrollo de software, podrías utilizar un repositorio de Git para gestionar el código. Cada desarrollador puede trabajar en su propia rama, y las revisiones de código se pueden realizar mediante «<em>pull requests</em>». La documentación puede incluir un archivo «<em>README</em>» detallado, comentarios en el código y documentos separados para aspectos complejos del sistema.</p>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
