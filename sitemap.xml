@@ -2,74 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aznarel.github.io/PRSI/index.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/00_Fundamentos/Evaluacion.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
          <loc>https://aznarel.github.io/PRSI/00_Fundamentos/PlantillaEntregaPracticas.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/10_Python_III.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/3_SociedadInformacion.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/11_Python_IV.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/01_TIC/4_EPA.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/2_ResumenUD.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/3_Dise%C3%B1o.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/2_ResumenUD.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/4_EticaSW.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/3_Ordenadores.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/5_Prog.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/4_Hardware.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/6_Lenguajes.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/02_Ordenadores/5_HardwareII.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/7_Python.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/03_SO/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/7_Python_I%20OLD.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/03_SO/4_SoftwareII.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/8_Python_I.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
     <url>
-         <loc>https://aznarel.github.io/PRSI/03_SO/5_SoftwareIII.html</loc>
-         <lastmod>2025-10-20</lastmod>
-    </url>
-    <url>
-         <loc>https://aznarel.github.io/PRSI/03_SO/6_SoftwareVI.html</loc>
-         <lastmod>2025-10-20</lastmod>
-    </url>
-    <url>
-         <loc>https://aznarel.github.io/PRSI/03_SO/7_SoftwareVII.html</loc>
-         <lastmod>2025-10-20</lastmod>
-    </url>
-    <url>
-         <loc>https://aznarel.github.io/PRSI/04_Prog/1_ProgramacionAula.html</loc>
-         <lastmod>2025-10-20</lastmod>
-    </url>
-    <url>
-         <loc>https://aznarel.github.io/PRSI/04_Prog/3_Software.html</loc>
-         <lastmod>2025-10-20</lastmod>
+         <loc>https://aznarel.github.io/PRSI/04_Prog/9_Python_II.html</loc>
+         <lastmod>2026-01-06</lastmod>
     </url>
 </urlset>
