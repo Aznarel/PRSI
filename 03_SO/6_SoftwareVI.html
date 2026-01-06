@@ -1,0 +1,1348 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Instalación de sistemas operativos">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/PRSI/03_SO/6_SoftwareVI.html">
+      
+      
+        <link rel="prev" href="5_SoftwareIII.html">
+      
+      
+        <link rel="next" href="7_SoftwareVII.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.36">
+    
+    
+      
+        <title>Instalación de sistemas operativos - Programación, redes y sistemas informáticos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.06209087.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#instalacion-de-sistemas-operativos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-header__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, redes y sistemas informáticos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Instalación de sistemas operativos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-nav__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Programación, redes y sistemas informáticos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/PlantillaEntregaPracticas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plantilla Entrega Prácticas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Sistemas Informáticos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Sistemas Informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UD3: Sistemas Operativos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UD3: Sistemas Operativos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_SoftwareI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 Sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_SoftwareII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 Evolución de los sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_SoftwareIII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 Tipos de sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3.4 Instalación de sistemas operativos
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="6_SoftwareVI.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    3.4 Instalación de sistemas operativos
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#eleccion-del-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elección del sistema operativo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtualización
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Virtualización">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ventajas-virtualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ventajas Virtualización
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hipervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hipervisor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracion-y-administracion-de-un-sistema-virtualizado-con-oracle-vm-virtualbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración y administración de un sistema virtualizado con Oracle VM VirtualBox
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración y administración de un sistema virtualizado con Oracle VM VirtualBox">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion-de-una-maquina-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación de una máquina virtual
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referencias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa35-juego-instalacion-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA3.5 Juego instalación sistema operativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa36-instalacion-sistema-operativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA3.6 Instalación sistema operativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pt37-reciclaje-de-los-ordenadores-antiguos-del-centro-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 PT3.7 Reciclaje de los ordenadores antiguos del centro "Linux"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pt38-reciclaje-de-los-ordenadores-antiguos-del-centro-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 PT3.8 Reciclaje de los ordenadores antiguos del centro "Windows"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_SoftwareVII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 Configuración de sistemas operativo Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="8_SoftwareVIII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 Configuración de sistemas operativo Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Desarrollo de software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Desarrollo de software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📁 UD4: Fundamentos de programación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            📁 UD4: Fundamentos de programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Prog/3_Dise%C3%B1o.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 Industria del software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Prog/4_EticaSW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 Sostenibilidad y ética en el desarrollo de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_Prog/5_Prog.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 Fundamentos de programación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- 
+
+https://www.tecnosecundaria.es/index.php/sistemas-operativos/129-trabajo-sistemas-operativos 
+
+https://es.slideshare.net/slideshow/porceso-de-arranque-de-un-ordenador/22614892
+
+-->
+
+<h1 id="instalacion-de-sistemas-operativos"><img alt="icono" src="imagenes/iconoSO.png" width="55" />  Instalación de sistemas operativos<a class="headerlink" href="#instalacion-de-sistemas-operativos" title="Permanent link">&para;</a></h1>
+<p>Instalar y configurar un sistema operativo incluye varios pasos clave, desde la selección del sistema adecuado hasta su configuración final para satisfacer las necesidades específicas del usuario.</p>
+<h2 id="eleccion-del-sistema-operativo">Elección del sistema operativo<a class="headerlink" href="#eleccion-del-sistema-operativo" title="Permanent link">&para;</a></h2>
+<p>El primer paso para seleccionar un sistema operativo es conocer las necesidades del usuario que lo va a explotar. No tiene sentido utilizar un sistema operativo complejo para un usuario principiante, ni un sistema operativo generalista para un experto en ciberseguridad. Por eso, es necesario que conozcas el usuario tipo de cada uno de los sistemas operativos más usados de la actualidad.</p>
+<h2 id="instalacion">Instalación<a class="headerlink" href="#instalacion" title="Permanent link">&para;</a></h2>
+<p>Por lo general, cuando compramos un ordenador personal, este suele tener el sistema operativo <strong>preinstalado</strong>, ya sea de forma comercial con Windows o MAC o de forma libre y gratuita con alguna distribución Linux. Sin embargo, en muchas ocasiones nos vemos obligados a <strong>formatear</strong> el disco duro de nuestro ordenador y a reinstalar de nuevo el sistema operativo. Lo primero que necesitamos para ello es el  <strong>medio de instalación</strong>, como una unidad USB de arranque o un disco, que actuará como el guión desde el cual se instalará el sistema operativo (en los dispositivos móviles no es necesario, puesto que ya lo incorporan de fábrica). </p>
+<p>Todos los sistemas operativos que lo necesitan cuentan con herramientas que te permitirán crear este disco de arranque.</p>
+<p>En el caso de Windows, <a href="https://support.microsoft.com/es-es/windows/crear-medios-de-instalaci%C3%B3n-de-windows-99a58364-8c02-206f-aa6f-40c3b507420d"><strong>aquí puedes crear un medio de instalación</strong></a> para cualquiera de los sistemas operativos de Microsoft.</p>
+<p>Dentro de la <strong>BIOS</strong> tenemos que cambiar la <strong>secuencia de arranque</strong> y dejar en primer lugar el lector de DVD o la unidad USB (si estamos utilizando un USB booteable). Tras estos cambios, iniciamos el ordenador y comenzará la instalación del sistema operativo.</p>
+<p>Una vez iniciado el sistema desde el medio de instalación, solamente hay que seguir los pasos del asistente de instalación del sistema operativo elegido.</p>
+<p>Una vez terminada la instalación tendrás un sistema operativo completamente limpio, listo para usar.</p>
+<figure style="align: center;">
+    <img src="./imagenes/so11.png">
+</figure>
+
+<p>Si te interesa el tema, en el siguiente vídeo puedes aprender cómo instalar windows desde un USB.</p>
+<div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AsfASvqfvlU?si=FMSHWJkNqu2YDLW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h2 id="virtualizacion">Virtualización<a class="headerlink" href="#virtualizacion" title="Permanent link">&para;</a></h2>
+<p>En general, el objetivo de la virtualización es poder utilizar <strong>simultáneamente</strong> en un mismo ordenador dos o más sistemas operativos. Por lo tanto, para poder hablar de virtualización tienen que estar funcionando a la vez <strong>varios sistemas operativos</strong>.</p>
+<h3 id="ventajas-virtualizacion">Ventajas Virtualización<a class="headerlink" href="#ventajas-virtualizacion" title="Permanent link">&para;</a></h3>
+<p>La virtualización tiene muchas aplicaciones interesantes:</p>
+<ul>
+<li>La más habitual es poder ejecutar aplicaciones que no están disponibles para el sistema operativo host (anfitrión), pero sí para otro sistema operativo que se instalaría como guest (huésped).</li>
+<li>La virtualización permite la conservación del software. Debido al progreso del hardware, los procesadores antiguos dejan de fabricarse y los sistemas operativos y aplicaciones antiguos dejan de desarrollarse y dejan de funcionar en el hardware moderno. Pero si el sistema operativo puede instalarse como guest, puede seguir utilizándose para siempre.</li>
+<li>La virtualización permite depurar y comprobar el funcionamiento de los programas y los sistemas operativos. Si un programa provoca un fallo de funcionamiento total, si se está ejecutando como guest, el sistema host puede recoger información sobre el motivo del fallo.</li>
+<li>La virtualización permite un mejor aprovechamiento del hardware, ya que un mismo ordenador puede contener muchos sistemas guests utilizados por usuarios diferentes, aislados unos de otros.</li>
+</ul>
+<h3 id="hipervisor">Hipervisor<a class="headerlink" href="#hipervisor" title="Permanent link">&para;</a></h3>
+<p>Un hipervisor, conocido también como <strong>monitor de máquinas virtuales</strong>, es un proceso (programa en ejecución) que crea y ejecuta máquinas virtuales. Un hipervisor permite que un ordenador host preste soporte a varias máquinas virtuales invitadas mediante el uso compartido virtual de sus recursos, como la memoria y el procesamiento. Por lo tanto el hipervisor es la pieza fundamental de la virtualización.</p>
+<ul>
+<li>El sistema operativo que tiene el control del hardware recibe el nombre de <strong>host (anfitrión)</strong>. </li>
+<li>Es el sistema operativo que se instaló primero en el ordenador y el que se pone en marcha al arrancar el ordenador. Los demás sistemas operativos reciben el nombre de <strong>guests (huéspedes)</strong> y pueden ejecutarse o no a voluntad del usuario.</li>
+</ul>
+<figure style="align: center;">
+    <img src="./imagenes/so30.png">
+    <figcaption> Arquitectura de una máquina virtual</figcaption>
+</figure>
+
+<h3 id="configuracion-y-administracion-de-un-sistema-virtualizado-con-oracle-vm-virtualbox">Configuración y administración de un sistema virtualizado con Oracle VM VirtualBox<a class="headerlink" href="#configuracion-y-administracion-de-un-sistema-virtualizado-con-oracle-vm-virtualbox" title="Permanent link">&para;</a></h3>
+<p>Oracle VM VirtualBox es una plataforma permite la creación de máquinas virtuales y una red virtual para conectar estas máquinas sin ocasionar interferencias con las máquinas o redes físicas en las que se encuentre el equipo anfitrión.</p>
+<h4 id="creacion-de-una-maquina-virtual">Creación de una máquina virtual<a class="headerlink" href="#creacion-de-una-maquina-virtual" title="Permanent link">&para;</a></h4>
+<p>A la hora de crear una máquina virtual, <strong>Oracle VM VirtualBox</strong> ofrece un asistente que guiará a través de todo el proceso. </p>
+<ol>
+<li>
+<p>Para poder realizar el proceso necesitamos un <strong>fichero imagen (ISO)</strong>, archivo que contiene el instalador del sistema operativo, que puede ser descargado desde las webs del sistema operativo que vayamos a instalar. </p>
+<p>Vamos a realizar el ejemplo de creación de una máquina virtual corriendo la distribución ubuntu. 
+El primer paso sería acudir a la web de ubuntu y descargar el fichero ISO de la última versión Ubuntu LTS de escritorio. 
+En la web <a href="https://ubuntu.com">ubuntu</a> podemos encontrar una opción de <em>Download</em>, a partir de la cual nos descarga la ISO correspondiente.
+<strong>La imagen .iso es bastante grande, por lo que tardará un poco en descargarse en conexiones más lentas.</strong></p>
+<p><figure style="align: center;">
+    <img src="./imagenes/so32.png">
+    <figcaption> Descarga ISO ubuntu desktop</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Una vez descargado podemos arrancar VirtualBox para iniciar el proceso de creación de la máquina. Seleccionamos la opción <strong>NUEVA</strong>.</p>
+</li>
+</ol>
+<figure style="align: center;">
+    <img src="./imagenes/so38.png">
+    <figcaption> Creación de una máquina virtual nueva</figcaption>
+</figure>
+
+<ol start="3">
+<li>
+<p>Configura los elementos mínimo para la creación de una máquina virtual:</p>
+<ul>
+<li>Nombre que identifique tu máquina virtual. </li>
+<li>El tipo de sistema operativo que contendrá la máquina y su arquitectura,</li>
+<li>Ruta archivo de instalación <code>.iso</code></li>
+</ul>
+</li>
+</ol>
+<figure style="align: center;">
+    <img src="./imagenes/so33.png">
+    <figcaption> Asignación nombre a la máquina virtual y selección ruta de la ISO</figcaption>
+</figure>
+
+<ol start="4">
+<li>
+<p>A continuación, debes indicar el tamaño de la memoría principal.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/so31.png">
+    <figcaption> Asignación 2GB de RAM a la máquina virtual</figcaption>
+</figure></p>
+<div class="admonition warning advertencia">
+<p class="admonition-title">Warning</p>
+<p>Hay que tener presente los recursos de los que dispone la máquina anfitrión, y no ceder demasiados de éstos para que el rendimiento no caiga hasta límites insufribles. Habitualmente el software de virtualización avisa al usuario si va a superar estos límites.</p>
+</div>
+</li>
+<li>
+<p>Por último, debemos indicar que deseamos crear un nuevo disco duro para esta máquina. Seleccionamos formato VDI, tamaño fijo y un espacio, por ejemplo de 10Gb. </p>
+<p><figure style="align: center;">
+    <img src="./imagenes/so39.png">
+    <figcaption> Creación de disco virtual</figcaption>
+</figure></p>
+</li>
+<li>
+<p>Haz clic en ‘Inicio’. Se iniciará el entorno en vivo para Ubuntu, con la opción de ‘Probar Ubuntu’ o ‘Instalar Ubuntu’.
+ <br />
+<figure style="align: center;">
+        <img src="./imagenes/so34.png">
+        <figcaption> Iniciar la máquina virtual</figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Sigue los pasos de la instalación.</p>
+</li>
+</ol>
+<figure style="align: center;">
+        <img src="./imagenes/so35.png">
+        <figcaption> Pasos instalación </figcaption>
+    </figure>
+<ol start="9">
+<li>Una vez que Ubuntu esté instalado, la máquina se reiniciará y eliminará la imagen .iso. Cuando la máquina se reinicia, puede iniciar sesión en su instalación de Ubuntu y comenzar a explorar Linux.</li>
+</ol>
+<h2 id="referencias">Referencias<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://es.linux-terminal.com/?p=7979">Cómo instalar el escritorio Ubuntu 24.04</a></li>
+</ul>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<h3 id="aa35-juego-instalacion-sistema-operativo">📝 <strong>AA3.5</strong> Juego instalación sistema operativo<a class="headerlink" href="#aa35-juego-instalacion-sistema-operativo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Instalar, configurar y administrar sistemas operativos de uso personal.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Para comprobar si te has familiarizado con el proceso de instalación de un sistema operativo realiza el siguiente <a href="https://www.educaplay.com/learning-resources/24883079-instalacion_de_os_desafio_rapido.html">reto</a>.</p>
+<p>Sube a la tarea una captura de pantalla de tu puntuación total.</p>
+<h3 id="aa36-instalacion-sistema-operativo">📝 <strong>AA3.6</strong> Instalación sistema operativo<a class="headerlink" href="#aa36-instalacion-sistema-operativo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Instalar, configurar y administrar sistemas operativos de uso personal.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>Describe los pasos para instalar un sistema operativo descargado de Internet en un ordenador.</li>
+<li>Busca y escribe la ruta de descarga de la ISO de Windows</li>
+<li>¿Cómo podemos cambiar la secuencia de arranque de un ordenador y para qué se hace?</li>
+<li>¿Qué es un USB booteable?</li>
+<li>¿Qué es un LiveCD? ¿Y un LiveUSB?</li>
+<li>Diferencias entre  LiveCD y USB booteable</li>
+<li>Busca imágenes de la pantalla de configuración de los sistemas operativos de teléfonos móviles.</li>
+</ol>
+<!-- 
+???success "Solución"
+
+    1.  Describe los pasos para instalar un sistema operativo descargado de Internet en un ordenador.
+    2.  Busca y escribe la ruta de descarga de la ISO de Windows
+    3.  ¿Cómo podemos cambiar la secuencia de arranque de un ordenador y para qué se hace?
+    4.  ¿Qué es un USB booteable?
+
+        * Contiene los archivos de instalación o arranque de un sistema operativo (Windows, Linux, etc.).
+        *   Se usa normalmente para instalar el sistema en el disco duro o para reparar equipos.
+
+    5. ¿Qué es un LiveCD? ¿Y un LiveUSB?
+
+        * Ambos permiten usar un sistema operativo sin instalarlo.
+        * El LiveCD se ejecuta desde un disco óptico.
+        * El LiveUSB desde una memoria USB, con más velocidad y flexibilidad.
+
+    6. Diferencias entre  LiveCD y USB booteable
+
+        * Un USB booteable sirve para instalar un sistema operativo.
+        * Un LiveCD/LiveUSB sirve para usar el sistema operativo sin instalarlo.
+
+    7.  Busca imágenes de la pantalla de configuración de los sistemas operativos de teléfonos móviles.
+ -->
+
+<h3 id="pt37-reciclaje-de-los-ordenadores-antiguos-del-centro-linux">📝 <strong>PT3.7</strong>  Reciclaje de los ordenadores antiguos del centro "Linux"<a class="headerlink" href="#pt37-reciclaje-de-los-ordenadores-antiguos-del-centro-linux" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Instalar, configurar y administrar sistemas operativos de uso personal.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una rúbrica individual">IC2</abbr>-10p)</em></strong></p>
+</blockquote>
+<p>La residencia de mayores del pueblo va a impartir un curso de introducción a la informática para mayores y ha hecho un llamamiento a la población para que donen ordenadores que ya no utilicen para este fin.</p>
+<p>En el centro disponemos de algunos ordenadores antiguos que no utilizamos (Los que empleamos en la situación de aprendizaje del apartado anterior) y sería una buena idea donarlos para por una parte reutilizarlos en lugar de tirarlos al punto limpio y por otra parte darles un uso social.</p>
+<p>Como son ordenadores antiguos, vamos a instalarles un sistema operativo ligero, pero a la vez actual. Además, sería interesante optar por un sistema operativo libre para no tener que gastar dinero en licencias.</p>
+<p>Para ello, realiza los siguientes pasos:</p>
+<ul>
+<li>Investiga sobre sistemas operativos ligeros para ordenadores antiguos basados en <strong>Linux</strong>.</li>
+<li>Descarga la ISO del sistema operativo elegido.</li>
+<li>Instala el sistema operativo elegido en la máquina virtual siguiendo los pasos del siguiente vídeo:</li>
+</ul>
+<div style="text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qH9JuCjCKow?si=koHlwqFdJiYEN_rp&amp;start=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<ul>
+<li><strong>Presenta un informe con evidencia de todos los pasos realizados para su instalación y el resultado final.</strong></li>
+</ul>
+<!-- === "**Rúbrica actividad IC2-10p**"
+
+    |Criterio| | Calificación| ||
+    |---|---|---|---|---|
+    | **Instalación del sistema operativo** | No realiza la instalación o la interrumpe sin completarla.<br> *0 p* | Realiza la instalación con errores o necesita asistencia constante.<br> *1 p* | Instala correctamente el sistema con ayuda puntual del docente. <br> *3 p*| Realiza la instalación completa de forma autónoma, eligiendo correctamente partición, idioma y opciones básicas. <br> *5 p*|
+    | **Configuración post-instalación** | No configura el sistema ni realiza ajustes básicos.<br> *0 p* | Configura parcialmente el sistema (cuenta, idioma, red, etc.) sin verificar su funcionamiento.<br> *1 p* | Configura correctamente los principales parámetros del sistema operativo y verifica su funcionamiento. <br> *3 p*| Configura el sistema de forma completa (usuarios, red, actualizaciones, seguridad). <br> *5 p* |
+    | **Autonomía y resolución de incidencias** | No intenta resolver los problemas que surgen. <br> *0 p*| Intenta resolverlos sin éxito o necesita ayuda constante. <br> *1 p*| Identifica y resuelve incidencias sencillas con ayuda puntual. <br> *3 p*| Muestra autonomía y capacidad de diagnóstico y resolución eficaz ante incidencias. <br> *5 p*|
+    | **Actitud y documentación del proceso** | No participa o muestra desinterés. <br> *0 p*| Participa con poca implicación o sin registrar el proceso. <br> *1 p*| Participa activamente y documenta el proceso de manera básica. <br> *3 p*| Muestra actitud proactiva, ordenada y documenta claramente los pasos realizados con capturas o comentarios. <br> *5 p*| -->
+
+<h3 id="pt38-reciclaje-de-los-ordenadores-antiguos-del-centro-windows">📝 <strong>PT3.8</strong>  Reciclaje de los ordenadores antiguos del centro "Windows"<a class="headerlink" href="#pt38-reciclaje-de-los-ordenadores-antiguos-del-centro-windows" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP2 / <abbr title="Instalar, configurar y administrar sistemas operativos de uso personal.">CE2.3</abbr> / <abbr title="Instrumento de calificación mediante una rúbrica individual">IC2</abbr>-10p)</em></strong></p>
+</blockquote>
+<p>La residencia de mayores del pueblo ha recibido más ordenadores y nos piden ahora que instalemos en estos últimos Windows.</p>
+<p>Instala el sistema operativo disponible <a href="https://windows-10.uptodown.com/windows/descargar">aquí</a> </p>
+<div style="text-align:center;">    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oY48EugQM6w?si=aG4Qt3Ftgcs6qBZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<ul>
+<li><strong>Presenta un informe con evidencia de todos los pasos realizados para su instalación y el resultado final.</strong></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Para evitar el error de KEY PRODUCTO:</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/so36.png">
+    <figcaption> Error instalación </figcaption>
+</figure></p>
+<p>Sigue los siguientes pasos:</p>
+<ul>
+<li>
+<p>Al crear la nueva máquina virtual, en la parte inferior, <strong>desactiva</strong> la casilla  “Instalación desatendida” o pulsa el botón “Omitir instalación desatendida”.
+<figure style="align: center;">
+    <img src="./imagenes/so41.png" >
+    <figcaption> Omitir instalación desatendida </figcaption>
+</figure></p>
+</li>
+<li>
+<p>Selecciona el botón <strong>Configuración</strong>.</p>
+</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/so42.png" >
+    <figcaption> Configurar máquina virtual </figcaption>
+</figure></p>
+<ul>
+<li>Desactiva el adaptador de red en VirtualBox: En la ventana de la máquina (antes de iniciar), ve a Configuración → Red → desmarca “Habilitar adaptador de red”.</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/so40.png" >
+    <figcaption> Error instalación </figcaption>
+</figure></p>
+<ul>
+<li>Inicia la máquinia y empieza la instalación.</li>
+<li>
+<p>Indicar que no tenemos Key Product:
+<figure style="align: center;">
+    <img src="./imagenes/so37.png">
+    <figcaption> Key Product </figcaption>
+</figure></p>
+</li>
+<li>
+<p>Seleccionar instalación <strong>avanzada</strong></p>
+</li>
+<li>Seguir los pasos  </li>
+</ul>
+</div>
+<!-- === "**Rúbrica actividad IC2-10p**"
+
+    |Criterio| | Calificación| ||
+    |---|---|---|---|---|
+    | **Instalación del sistema operativo** | No realiza la instalación o la interrumpe sin completarla.<br> *0 p* | Realiza la instalación con errores o necesita asistencia constante.<br> *1 p* | Instala correctamente el sistema con ayuda puntual del docente. <br> *3 p*| Realiza la instalación completa de forma autónoma, eligiendo correctamente partición, idioma y opciones básicas. <br> *5 p*|
+    | **Configuración post-instalación** | No configura el sistema ni realiza ajustes básicos.<br> *0 p* | Configura parcialmente el sistema (cuenta, idioma, red, etc.) sin verificar su funcionamiento.<br> *1 p* | Configura correctamente los principales parámetros del sistema operativo y verifica su funcionamiento. <br> *3 p*| Configura el sistema de forma completa (usuarios, red, actualizaciones, seguridad). <br> *5 p* |
+    | **Autonomía y resolución de incidencias** | No intenta resolver los problemas que surgen. <br> *0 p*| Intenta resolverlos sin éxito o necesita ayuda constante. <br> *1 p*| Identifica y resuelve incidencias sencillas con ayuda puntual. <br> *3 p*| Muestra autonomía y capacidad de diagnóstico y resolución eficaz ante incidencias. <br> *5 p*|
+    | **Actitud y documentación del proceso** | No participa o muestra desinterés. <br> *0 p*| Participa con poca implicación o sin registrar el proceso. <br> *1 p*| Participa activamente y documenta el proceso de manera básica. <br> *3 p*| Muestra actitud proactiva, ordenada y documenta claramente los pasos realizados con capturas o comentarios. <br> *5 p*| -->
+
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="5_SoftwareIII.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 3.3 Tipos de sistemas operativos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                3.3 Tipos de sistemas operativos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="7_SoftwareVII.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 3.5 Configuración de sistemas operativo Linux">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                3.5 Configuración de sistemas operativo Linux
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>

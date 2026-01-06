@@ -1,0 +1,354 @@
+// question: 0  name: Switch category to $course$/top/UD3_SO_Elena
+$CATEGORY: $course$/top/UD3_SO_Elena
+
+
+// question: 1  name: Función del sistema operativo
+::1. Función del sistema operativo::[html]<p>¿Cuál de las siguientes es una función básica de un sistema operativo?</p>{
+    =[moodle]Proporcionar una interfaz entre el usuario y la máquina
+    ~%-33.33333%[moodle]Aumentar automáticamente la velocidad del procesador
+    ~%-33.33333%[moodle]Crear documentos de forma automática sin aplicaciones externas
+}
+
+
+// question: 2  name: Gestión de dispositivos
+::2. Gestión de dispositivos::[html]<p>En relación con el hardware, el sistema operativo se encarga de\:</p>{
+    =[moodle]Controlar y gestionar el funcionamiento de los dispositivos
+    ~%-33.33333%[moodle]Fabricar los controladores físicos de cada dispositivo
+    ~%-33.33333%[moodle]Evitar que se conecten nuevos dispositivos al sistema
+}
+
+
+// question: 3  name: Tipos de sistemas operativos
+::3. Tipos de sistemas operativos::[html]<p>Un sistema operativo que permite que varios usuarios trabajen simultáneamente se denomina\:</p>{
+    =[moodle]Multiusuario
+    ~%-33.33333%[moodle]Monotarea
+    ~%-33.33333%[moodle]Monopuesto
+}
+
+
+// question: 4  name: Software libre vs propietario
+::4. Software libre vs propietario::[html]<p>Indica cuál de los siguientes sistemas operativos es de software libre\:</p>{
+    =[moodle]Linux (por ejemplo, Ubuntu)
+    ~%-33.33333%[moodle]Windows 11
+    ~%-33.33333%[moodle]macOS
+}
+
+
+// question: 5  name: Seguridad en el sistema operativo
+::5. Seguridad en el sistema operativo::[html]<p>El sistema operativo incluye medidas de seguridad para\:</p>{
+    =[moodle]Controlar permisos y evitar usos no autorizados
+    ~%-33.33333%[moodle]Evitar que el ordenador se apague accidentalmente
+    ~%-33.33333%[moodle]Eliminar automáticamente archivos antiguos
+}
+
+
+// question: 6  name: Primera generación
+::6. Primera generación::[html]<p>Durante la primera generación (1945-1955), los ordenadores:</p>{
+    =[moodle]No utilizaban sistemas operativos y requerían introducir órdenes manualmente
+    ~%-33.33333%[moodle]Ejecutaban multiprogramación y tiempo compartido
+    ~%-33.33333%[moodle]Ya incorporaban interfaces gráficas básicas
+}
+
+
+// question: 7  name: Segunda generación - Procesamiento por lotes
+::7. Segunda generación - Procesamiento por lotes::[html]<p>¿Qué característica definió a los sistemas operativos de la segunda generación?</p>{
+    =[moodle]Procesamiento por lotes
+    ~%-33.33333%[moodle]Interfaces gráficas
+    ~%-33.33333%[moodle]Virtualización de sistemas
+}
+
+
+// question: 8  name: Primer SO importante
+::8. Primer sistema operativo destacado::[html]<p>¿Cuál se considera el primer sistema operativo importante?</p>{
+    =[moodle]El sistema desarrollado por General Motors para la IBM 701
+    ~%-33.33333%[moodle]MS-DOS para PC
+    ~%-33.33333%[moodle]UNIX para gestión de redes
+}
+
+
+// question: 9  name: Tercera generación - avances
+::9. Tercera generación - avances::[html]<p>En la tercera generación de sistemas operativos (1965-1980) aparecieron:</p>{
+    =[moodle]Multiprogramación, tiempo compartido y multiprocesador
+    ~%-33.33333%[moodle]Los primeros ordenadores sin teclado
+    ~%-33.33333%[moodle]Los sistemas operativos exclusivamente gráficos
+}
+
+
+// question: 10  name: Aparición de UNIX
+::10. Aparición de UNIX::[html]<p>UNIX apareció en 1968 y se caracterizó por ser:</p>{
+    =[moodle]Un sistema muy utilizado en redes y precursor de Internet
+    ~%-33.33333%[moodle]El primer sistema operativo con interfaz gráfica
+    ~%-33.33333%[moodle]El primer sistema operativo para teléfonos móviles
+}
+
+
+// question: 11  name: Cuarta generación - interfaces
+::11. Cuarta generación - interfaces::[html]<p>En la cuarta generación (desde 1981) los sistemas operativos destacan por:</p>{
+    =[moodle]Interfaces más fáciles de usar y aparición de sistemas gráficos como Windows y MacOS
+    ~%-33.33333%[moodle]Desaparecer las interfaces gráficas
+    ~%-33.33333%[moodle]Volver al procesamiento por lotes
+}
+
+
+// question: 12  name: Sistemas derivados de UNIX
+::12. Sistemas derivados de UNIX::[html]<p>¿Qué sistemas operativos provienen de la evolución de UNIX?</p>{
+    =[moodle]Linux y sus distribuciones
+    ~%-33.33333%[moodle]MS-DOS
+    ~%-33.33333%[moodle]Windows 3.x
+}
+
+
+// question: 13  name: Tecnología clave por generación
+::13. Tecnología clave por generación::[html]<p>¿Qué tecnología permitió los avances de la tercera generación?</p>{
+    =[moodle]El circuito integrado
+    ~%-33.33333%[moodle]El transistor
+    ~%-33.33333%[moodle]La válvula de vacío
+}
+
+
+// question: 14  name: Presencia de los SO
+::14. Presencia de los SO::[html]<p>¿Dónde podemos encontrar sistemas operativos según los apuntes?</p>{
+    =[moodle]En cualquier dispositivo con microprocesador (móviles, TV, tabletas, etc.)
+    ~%-33.33333%[moodle]Solo en ordenadores de escritorio
+    ~%-33.33333%[moodle]Únicamente en móviles y portátiles
+}
+
+
+// question: 15  name: Windows - popularidad
+::15. Windows - popularidad::[html]<p>¿Qué hace a Windows especialmente adecuado para oficinas y centros educativos?</p>{
+    =[moodle]Su amplia compatibilidad con software y su integración con herramientas de trabajo
+    ~%-33.33333%[moodle]Que solo funciona en ordenadores muy potentes
+    ~%-33.33333%[moodle]Que no requiere actualizaciones
+}
+
+
+// question: 16  name: Arquitecturas
+::16. Arquitecturas 32 y 64 bits::[html]<p>¿Qué indica el número de bits de un sistema operativo?</p>{
+    =[moodle]La longitud de los datos y direcciones de memoria que el procesador puede manejar
+    ~%-33.33333%[moodle]El número de usuarios que pueden iniciar sesión
+    ~%-33.33333%[moodle]La velocidad de Internet del equipo
+}
+
+
+// question: 17  name: Distribuciones Linux
+::17. Distribuciones Linux::[html]<p>¿Qué es una distribución de Linux?</p>{
+    =[moodle]Una versión adaptada de Linux con herramientas, entorno de escritorio y gestor de paquetes
+    ~%-33.33333%[moodle]Una versión exclusiva para móviles Android
+    ~%-33.33333%[moodle]Un programa que se instala dentro de Windows
+}
+
+
+// question: 18  name: macOS perfil de usuario
+::18. macOS - perfil de usuario::[html]<p>¿Para qué tipo de usuarios es especialmente popular macOS?</p>{
+    =[moodle]Profesionales creativos como diseñadores, editores de vídeo y músicos
+    ~%-33.33333%[moodle]Hackers y expertos en ciberseguridad
+    ~%-33.33333%[moodle]Usuarios sin conexión a Internet
+}
+
+
+// question: 19  name: Android
+::20. Android::[html]<p>¿Qué característica destaca de Android?</p>{
+    =[moodle]Es un sistema versátil y personalizable disponible en muchos tipos de dispositivos
+    ~%-33.33333%[moodle]Es exclusivo de los teléfonos de Apple
+    ~%-33.33333%[moodle]Solo funciona sin conexión a Internet
+}
+
+// question: 20  name: Elección SO
+::20. Elección del sistema operativo::[html]<p>¿Qué factor es fundamental al elegir un sistema operativo?</p>{
+    =[moodle]Las necesidades y el nivel del usuario que lo va a utilizar
+    ~%-33.33333%[moodle]La marca del monitor
+    ~%-33.33333%[moodle]El color del gabinete del ordenador
+}
+
+// question: 21  name: Medio instalación
+::21. Medio de instalación::[html]<p>¿Qué necesitamos para reinstalar un sistema operativo?</p>{
+    =[moodle]Un medio de instalación como un USB booteable o un disco
+    ~%-33.33333%[moodle]Un cable HDMI conectado al monitor
+    ~%-33.33333%[moodle]Un teclado inalámbrico específico
+}
+
+// question: 22  name: BIOS arranque
+::22. Secuencia de arranque::[html]<p>¿Para qué se cambia la secuencia de arranque en la BIOS?</p>{
+    =[moodle]Para iniciar el ordenador desde el medio de instalación elegido
+    ~%-33.33333%[moodle]Para cambiar el fondo de pantalla de la BIOS
+    ~%-33.33333%[moodle]Para aumentar la velocidad del procesador
+}
+
+// question: 23  name: Virtualización definición
+::23. Virtualización::[html]<p>¿Qué define a la virtualización?</p>{
+    =[moodle]La ejecución simultánea de dos o más sistemas operativos en un mismo equipo
+    ~%-33.33333%[moodle]La instalación de un solo sistema operativo por ordenador
+    ~%-33.33333%[moodle]El arranque únicamente desde unidades externas
+}
+
+// question: 24  name: Ventaja virtualización
+::24. Ventajas de la virtualización::[html]<p>¿Cuál es una ventaja destacada de la virtualización?</p>{
+    =[moodle]Permite ejecutar software antiguo en hardware moderno como sistema guest
+    ~%-33.33333%[moodle]Evita totalmente el uso de memoria RAM
+    ~%-33.33333%[moodle]Elimina la necesidad de instalar sistemas operativos
+}
+
+// question: 25  name: Hipervisor
+::25. Hipervisor::[html]<p>¿Qué es un hipervisor?</p>{
+    =[moodle]Un programa que crea y ejecuta máquinas virtuales gestionando sus recursos
+    ~%-33.33333%[moodle]Un antivirus especializado en redes virtuales
+    ~%-33.33333%[moodle]Un sistema operativo diseñado solo para servidores
+}
+
+// question: 26  name: Host guest
+::26. Host y guest::[html]<p>¿Qué diferencia al sistema host del sistema guest?</p>{
+    =[moodle]El host controla el hardware y arranca primero; el guest se ejecuta dentro del host
+    ~%-33.33333%[moodle]El guest siempre es más rápido que el host
+    ~%-33.33333%[moodle]El host solo se usa en servidores y nunca en PCs
+}
+
+// question: 27  name: ISO definición
+::27. Fichero ISO::[html]<p>¿Qué es un fichero ISO en el contexto de la instalación?</p>{
+    =[moodle]Una imagen que contiene el instalador completo del sistema operativo
+    ~%-33.33333%[moodle]Una copia de seguridad automática del disco duro
+    ~%-33.33333%[moodle]Un archivo que solo guarda configuraciones de red
+}
+
+// question: 28  name: RAM VirtualBox
+::28. Memoria RAM en VirtualBox::[html]<p>¿Qué debemos considerar al asignar memoria RAM a una máquina virtual?</p>{
+    =[moodle]Que no debemos ceder demasiada RAM para evitar que el sistema host pierda rendimiento
+    ~%-33.33333%[moodle]Que la máquina virtual siempre debe usar toda la RAM disponible
+    ~%-33.33333%[moodle]Que la RAM asignada no afecta al rendimiento del host
+}
+
+// question: 29  name: Disco VirtualBox
+::29. Disco duro virtual::[html]<p>¿Qué formato suele usarse para el disco duro virtual en VirtualBox?</p>{
+    =[moodle]VDI
+    ~%-33.33333%[moodle]MP4
+    ~%-33.33333%[moodle]EXE
+}
+
+// question: 30  name: Configuración SO
+::30. Configuración del sistema operativo::[html]<p>¿Qué opción podemos configurar desde el Panel de control o Ajustes?</p>{
+    =[moodle]Los usuarios y sus roles dentro del sistema
+    ~%-33.33333%[moodle]El modelo físico de la placa base
+    ~%-33.33333%[moodle]La velocidad máxima de la conexión a Internet del proveedor
+}
+
+// question: 31  name: Periféricos
+::31. Periféricos::[html]<p>¿Qué tipo de ajustes podemos realizar sobre los periféricos?</p>{
+    =[moodle]Configurar dispositivos como ratón, teclado o impresora
+    ~%-33.33333%[moodle]Modificar la memoria RAM instalada
+    ~%-33.33333%[moodle]Cambiar el tipo de procesador del equipo
+}
+
+// question: 32  name: Inicio sesión Ubuntu
+::32. Inicio de sesión en Ubuntu::[html]<p>¿Qué ocurre al dejar de usar el equipo en Ubuntu?</p>{
+    =[moodle]Se activa la pantalla de bloqueo mostrando hora y fecha
+    ~%-33.33333%[moodle]El sistema se apaga automáticamente a los 30 segundos
+    ~%-33.33333%[moodle]Se cierran todas las aplicaciones abiertas
+}
+
+// question: 33  name: Cerrar sesión Ubuntu
+::33. Cerrar sesión::[html]<p>¿Qué permite la opción de cambiar de usuario en Ubuntu?</p>{
+    =[moodle]Mantener las aplicaciones abiertas mientras otro usuario inicia sesión
+    ~%-33.33333%[moodle]Eliminar la cuenta del usuario actual
+    ~%-33.33333%[moodle]Reiniciar automáticamente el sistema
+}
+
+
+// question: 34  name: Áreas de trabajo
+::34. Áreas de trabajo en Ubuntu::[html]<p>¿Qué son las áreas de trabajo?</p>{
+    =[moodle]Escritorios virtuales donde organizar ventanas y tareas
+    ~%-33.33333%[moodle]El lugar donde se guardan las copias de seguridad del sistema
+    ~%-33.33333%[moodle]Una herramienta exclusiva para programadores
+}
+
+// question: 35  name: Centro aplicaciones
+::35. Centro de Aplicaciones::[html]<p>¿Qué permite el Centro de Aplicaciones de Ubuntu?</p>{
+    =[moodle]Instalar, actualizar y desinstalar programas de forma gráfica
+    ~%-33.33333%[moodle]Modificar la BIOS del equipo
+    ~%-33.33333%[moodle]Cambiar la versión del kernel manualmente
+}
+
+
+// question: 36  name: Inicio de sesión en Windows
+::36. Inicio de sesión en Windows::[html]<p>¿Qué aparece primero al encender un equipo con Windows 10?</p>{
+    =[moodle]La pantalla de bloqueo con la fecha y la hora
+    ~%-33.33333%[moodle]El escritorio y las aplicaciones recientes
+    ~%-33.33333%[moodle]El Administrador de tareas
+}
+
+// question: 37  name: Cerrar sesión
+::37. Cerrar sesión::[html]<p>¿Qué ocurre si en Windows 10 cambias de usuario en lugar de cerrar sesión?</p>{
+    =[moodle]Las aplicaciones siguen abiertas y puedes retomarlas más tarde
+    ~%-33.33333%[moodle]El sistema se reinicia automáticamente
+    ~%-33.33333%[moodle]Se eliminan los archivos temporales del usuario
+}
+
+// question: 38  name: Información del sistema
+::38. Información del sistema::[html]<p>¿Dónde se consulta la información del dispositivo en Windows 10?</p>{
+    =[moodle]"Inicio → Configuración → Sistema → Acerca de"
+    ~%-33.33333%[moodle]"Panel de control → Seguridad"
+    ~%-33.33333%[moodle]"Administrador de tareas → Rendimiento"
+}
+
+// question: 39  name: Cuentas de usuario
+::39. Cuentas de usuario::[html]<p>¿Cuál es una ventaja de usar una cuenta Microsoft en Windows 10?</p>{
+    =[moodle]Permite sincronizar configuraciones entre varios dispositivos
+    ~%-33.33333%[moodle]Desactiva las actualizaciones de Windows
+    ~%-33.33333%[moodle]Evita que otros usuarios puedan iniciar sesión
+}
+
+// question: 40  name: Explorador de Windows
+::40. Explorador de Windows::[html]<p>¿Qué permite realizar la cinta de opciones del Explorador de Windows?</p>{
+    =[moodle]Acceder rápidamente a acciones como Copiar, Pegar o Crear carpeta
+    ~%-33.33333%[moodle]Cambiar la resolución de la pantalla
+    ~%-33.33333%[moodle]Modificar cuentas de usuario
+}
+
+// question: 41  name: Vista de tareas
+::41. Vista de tareas::[html]<p>¿Para qué sirve la herramienta "Vista de tareas" en Windows 10?</p>{
+    =[moodle]Para ver aplicaciones abiertas y el historial de actividad
+    ~%-33.33333%[moodle]Para desinstalar programas del sistema
+    ~%-33.33333%[moodle]Para activar el modo ahorro de energía
+}
+
+// question: 42  name: Microsoft Store
+::42. Microsoft Store::[html]<p>¿Qué permite hacer la Microsoft Store de Windows 10?</p>{
+    =[moodle]Instalar, actualizar y desinstalar aplicaciones de forma segura
+    ~%-33.33333%[moodle]Modificar la memoria RAM del sistema
+    ~%-33.33333%[moodle]Gestionar particiones del disco duro
+}
+
+// question: 43  name: Monitorización del sistema
+::43. Monitorización del sistema::[html]<p>¿Qué herramienta muestra el uso de CPU, memoria, disco y red en tiempo real?</p>{
+    =[moodle]El Administrador de tareas
+    ~%-33.33333%[moodle]El Panel de control
+    ~%-33.33333%[moodle]El Programador de tareas
+}
+
+// question: 44  name: Diferencia cuentas locales y Microsoft
+::44. Diferencia cuentas locales y Microsoft::[html]<p>¿Cuál es una ventaja principal de usar una cuenta Microsoft en lugar de una cuenta local en Windows 10?</p>{
+    =[moodle]Permite sincronizar configuraciones, instalar apps de la Tienda Microsoft y usar servicios como Office 365
+    ~%-33.33333%[moodle]No requiere contraseña para iniciar sesión
+    ~%-33.33333%[moodle]Permite ejecutar todos los programas sin restricciones de administrador
+}
+
+// question: 45  name: Diferencia administrador y usuario estándar
+::45. Diferencia administrador y usuario estándar::[html]<p>¿Qué diferencia principal existe entre una cuenta de administrador y una cuenta estándar en Windows 10?</p>{
+    =[moodle]El administrador puede cambiar ajustes críticos y gestionar cuentas; el usuario estándar tiene acceso limitado para tareas diarias
+    ~%-33.33333%[moodle]El usuario estándar puede instalar programas y cambiar configuraciones críticas; el administrador no
+    ~%-33.33333%[moodle]No hay diferencia, ambos tipos de cuenta tienen los mismos permisos
+}
+
+// question: 46  name: Desfragmentador de disco
+::46. Desfragmentador de disco::[html]<p>¿Cuál es la función principal del desfragmentador de disco en Windows 10?</p>{
+    =[moodle]Reorganizar los datos en el disco para mejorar el rendimiento
+    ~%-33.33333%[moodle]Aumentar la memoria RAM disponible
+    ~%-33.33333%[moodle]Eliminar archivos temporales automáticamente
+}
+
+// question: 47  name: Punto de restauración
+::47. Punto de restauración del sistema::[html]<p>¿Cuál es la función principal de un punto de restauración en Windows 10?</p>{
+    =[moodle]Permite volver a un estado anterior del sistema conservando la configuración, controladores y aplicaciones instaladas, en caso de problemas
+    ~%-33.33333%[moodle]Guarda todos los documentos, fotos y vídeos del usuario
+    ~%-33.33333%[moodle]Elimina automáticamente todos los programas instalados recientemente
+}
+
+
