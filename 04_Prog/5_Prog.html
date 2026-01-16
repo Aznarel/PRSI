@@ -1,0 +1,1392 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Python">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/PRSI/04_Prog/5_Prog.html">
+      
+      
+        <link rel="prev" href="4_EticaSW.html">
+      
+      
+        <link rel="next" href="6_Lenguajes.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Python - Programación, redes y sistemas informáticos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fundamentos-de-programacion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-header__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, redes y sistemas informáticos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-nav__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Programación, redes y sistemas informáticos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/PlantillaEntregaPracticas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plantilla Entrega Prácticas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Sistemas Informáticos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Sistemas Informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UD3: Sistemas Operativos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UD3: Sistemas Operativos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/3_SoftwareI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 Sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/4_SoftwareII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 Evolución de los sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/5_SoftwareIII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 Tipos de sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/6_SoftwareVI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 Instalación de sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/7_SoftwareVII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 Configuración de sistemas operativo Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/8_SoftwareVIII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 Configuración de sistemas operativo Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Desarrollo de software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Desarrollo de software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📁 UD4: Fundamentos de programación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            📁 UD4: Fundamentos de programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_Dise%C3%B1o.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 Industria del software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_EticaSW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 Sostenibilidad y ética en el desarrollo de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.3 Fundamentos de programación
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="5_Prog.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.3 Fundamentos de programación
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logica-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lógica de programación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lógica de programación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-abordar-problemas-complejos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo abordar problemas complejos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algoritmos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formas-de-expresar-un-algoritmo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formas de expresar un algoritmo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formas de expresar un algoritmo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagramas-de-flujo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagramas de flujo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudocodigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pseudocódigo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pensamiento-computacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pensamiento computacional
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa45-diagramas-de-flujo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.5 Diagramas de flujo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aar46-refuerzo-diagramas-de-flujo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AAR4.6 Refuerzo: Diagramas de flujo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_Lenguajes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4 Lenguajes de programación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_Python.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5 Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="8_Python_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.6 Elementos básicos de Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="9_Python_II.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.7 Estructuras de control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10_Python_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.8 Estructuras de datos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- 
+
+https://drive.google.com/file/d/1aXYZ-J1kKdToNaAd49JfwNrm8YrWnJRe/edit
+
+https://nachoiborraies.github.io/python/
+
+https://lopegonzalez.es/eso-y-bachillerato/tic-i-1o-bachillerato/tema-11-fundamentos-de-programacion/
+
+https://lopegonzalez.es/eso-y-bachillerato/creacion-digital-y-pensamiento-computacional-1o-bachillerato/tema-1-introduccion-a-la-programacion/
+
+-->
+
+<h1 id="fundamentos-de-programacion"><img alt="icono" src="imagenes/OIP.webp" width="55" /> Fundamentos de programación<a class="headerlink" href="#fundamentos-de-programacion" title="Permanent link">&para;</a></h1>
+<div style="background-color:#fff3cd; display:flex; justify-content:space-between; align-items:center; padding:20px; border-radius:8px;">
+  <div style= color:#444; font-size:18px; font-family:'Comic Sans MS', cursive, sans-serif;">
+    <p>
+    En la actualidad, la capacidad para entender la tecnología es una competencia fundamental  que otorga a quienes la dominan una ventaja competitiva muy importante. El estudio de la programación, tiene una utilidad práctica indiscutible, pero es que a nivel profesional es ya una de las habilidades más demandadas por una amplia variedad de sectores.
+    </p>
+    <p>
+    El estudio de este tema no te va a convertir en programador, pero sí que te va a dar la foto global de porqué son necesarios los programas, y también del proceso que se sigue para su construcción. Además, aprenderás los fundamentos de uno de los lenguajes de programación más demandados en la actualidad, y serás capaz de programar todo un universo de aplicaciones, incluso juegos.
+  </div>
+</div>
+
+<h2 id="logica-de-programacion">Lógica de programación<a class="headerlink" href="#logica-de-programacion" title="Permanent link">&para;</a></h2>
+<p>El estudio de los algoritmos es muy importante porque son la base del <strong>pensamiento computacional</strong>, una habilidad que es crítica en la actualidad. </p>
+<p>Este tipo de pensamiento nos permite descomponer problemas complejos en partes más manejables, lo que es fundamental para cualquier tarea de programación. Aprender sobre algoritmos, adoptando la lógica de programación, mejora nuestra capacidad de pensar de forma ordenada, lo cual es indispensable en la resolución de problemas tanto en la informática como en la vida cotidiana. </p>
+<p>Por lo tanto, estudiar cómo se construyen y optimizan los algoritmos va mucho más allá de programar, tiene que ver con la resolución de problemas en cualquier disciplina.</p>
+<h3 id="como-abordar-problemas-complejos">Cómo abordar problemas complejos<a class="headerlink" href="#como-abordar-problemas-complejos" title="Permanent link">&para;</a></h3>
+<p>Vamos a ver algunas estrategias que podemos poner en práctica para facilitar la construcción de una solución.</p>
+<ol>
+<li>
+<p><strong>Divide y vencerás</strong></p>
+<p>El enfoque <strong>«<em>divide y vencerás</em>»</strong> es una técnica ampliamente utilizada para abordar problemas complejos. Consiste en descomponer un problema grande en problemas más pequeños y manejables, resolver cada uno de estos subproblemas individualmente y luego combinar sus soluciones para resolver el problema original.</p>
+<p><figure style="align: center;">
+    <img src="./imagenes/divide.png">
+    <figcaption> Divide y vencerás</figcaption>
+</figure></p>
+<div class="grid cards" markdown>
+<ul>
+<li>
+<p><img alt="ℹ" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2139.svg" title=":information_source:" /> <strong>Ejemplo construcción casa</strong></p>
+<hr />
+<p>Nadie empieza por el tejado sino que los pasos sencillos serían:</p>
+<ul>
+<li>Construcción de los cimientos.</li>
+<li>Levantar las paredes.</li>
+<li>Instalar electricidad y fontanería.</li>
+<li>Colocar puertas y ventanas</li>
+</ul>
+<p><em>Cada uno de estas tareas se trabaja por separado y al completar todas las tareas obtenemos la casa.</em></p>
+</li>
+<li>
+<p><img alt="ℹ" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2139.svg" title=":information_source:" /> <strong>Ejemplo desarrollo software que suma dos números</strong></p>
+<hr />
+<p>Primero lo dividimos en pequeñas tareas, por ejemplo:</p>
+<ul>
+<li>pedir datos al usuario</li>
+<li>realizar un cálculo</li>
+<li>mostrar un resultado</li>
+</ul>
+<p><em>Resolver cada una por separado hace que el problema sea más fácil de entender y de programar.</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Prototipado</strong></p>
+<p>El prototipado consiste en crear prototipos permite visualizar y evaluar rápidamente las soluciones propuestas, para posteriormente hacerle pruebas que aseguren que las soluciones funcionen correctamente.</p>
+<div class="grid cards" markdown>
+<ul>
+<li>
+<p><img alt="ℹ" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2139.svg" title=":information_source:" /> <strong>Ejemplo construcción casa</strong></p>
+<hr />
+<p>Siguiendo con el ejemplo anterior, antes de construir una casa se hacen los planos. Estos planos no son la casa real, pero permiten:</p>
+<ul>
+<li>ver cómo será</li>
+<li>detectar errores</li>
+<li>hacer cambios sin gastar tiempo ni dinero</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/casa.png">
+    <figcaption> Planos de una casa</figcaption>
+</figure></p>
+</li>
+<li>
+<p><img alt="ℹ" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2139.svg" title=":information_source:" /> <strong>Ejemplo desarrollo software que suma dos números</strong></p>
+<hr />
+<p>En programación, un prototipo puede ser:</p>
+<ul>
+<li>un esquema en papel</li>
+<li>un diagrama de flujo</li>
+<li>una primera versión muy sencilla del programa</li>
+</ul>
+<p><figure style="align: center;">
+    <img src="./imagenes/app.png">
+    <figcaption> Boceto de una aplicación</figcaption>
+</figure></p>
+<p>De esta forma, <strong>pensamos la solución antes de programar, evitando errores y facilitando el trabajo posterior</strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+<h2 id="algoritmos">Algoritmos<a class="headerlink" href="#algoritmos" title="Permanent link">&para;</a></h2>
+<p>Un <strong>algoritmo</strong> es un <em>conjunto de instrucciones finita, concretas y ordenadas que describen un procedimiento paso a paso para realizar una tarea o resolver un problema.</em></p>
+<p>Por tanto, una receta de cocina es un algoritmo. En el contexto de la programación, estos pasos son instrucciones que el ordenador ejecuta para alcanzar un resultado.</p>
+<p>Los algoritmos son fundamentales porque permiten a los programadores escribir códigos que no solo resuelven problemas específicos, sino que también son eficientes y están optimizados para consumir la menor cantidad posible de recursos (tiempo, memoria, procesador, etc.).</p>
+<p>Por ejemplo, si necesitamos un algoritmo para buscar un libro en una biblioteca, el proceso podría ser algo así:</p>
+<ul>
+<li><strong>Inicio</strong>: entrar en la biblioteca.</li>
+<li><strong>Búsqueda</strong>: dirigirse a la sección correcta según el género del libro.</li>
+<li><strong>Selección</strong>: buscar el libro por su título en el orden alfabético.</li>
+<li><strong>Verificación</strong>: si el libro está, cogerlo; si no está, buscar otro libro o preguntar al bibliotecario.</li>
+<li><strong>Fin</strong>: salir de la biblioteca con el libro.</li>
+</ul>
+<p>Cada uno de estos pasos constituye una parte del algoritmo y omitir cualquiera de ellos podría resultar en que no logremos nuestro objetivo -encontrar y llevarnos el libro-.</p>
+<p>Además de la programación, usamos algoritmos en nuestra vida diaria, sin darnos cuenta: cuando organizamos nuestras tareas diarias, cuando decidimos la ruta más rápida para llegar a nuestro destino o incluso cuando hacemos la compra en el supermercado siguiendo un orden lógico que nos ahorre tiempo.</p>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U3CGMyjzlvM?si=CIECfgfL5CvehEPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h2 id="formas-de-expresar-un-algoritmo">Formas de expresar un algoritmo<a class="headerlink" href="#formas-de-expresar-un-algoritmo" title="Permanent link">&para;</a></h2>
+<p>Los algoritmos pueden expresarse de muchas maneras, pero nos centraremos en dos de las más comunes: los <strong>diagramas de flujo</strong> y el <strong>pseudocódigo</strong>.</p>
+<h3 id="diagramas-de-flujo">Diagramas de flujo<a class="headerlink" href="#diagramas-de-flujo" title="Permanent link">&para;</a></h3>
+<p>Los diagramas de flujo son representaciones gráficas de los pasos que forman parte de un proceso, usando símbolos interconectados por flechas. Estos diagramas facilitan la visualización de la secuencia de operaciones y son muy útiles para planificar y explicar algoritmos complejos.</p>
+<ol>
+<li><strong>Componentes principales</strong></li>
+</ol>
+<figure style="align: center;">
+    <img src="./imagenes/diagrama1.png">
+    <figcaption> Elementos diagrama de flujo</figcaption>
+</figure>
+
+<ol start="2">
+<li>
+<p><strong>¿Cómo se usa cada componente?</strong></p>
+<ul>
+<li>El óvalo <em>siempre se coloca en la parte superior del diagrama</em> para indicar el inicio del proceso. El flujo comienza aquí.</li>
+<li>Los rectángulos se utilizan para representar cada acción secuencialmente. <em>Cada paso que lleva a cabo el programa va dentro de un rectángulo</em>.</li>
+<li>Cuando el proceso requiere una decisión o condición, usamos un rombo. <em>La flecha que sale de uno de los lados indica lo que ocurre si la condición es verdadera (sí), y la otra lo que ocurre si es falsa (no)</em>.</li>
+<li>Los paralelogramos marcan los puntos <em>donde el usuario debe introducir información</em> (que necesita el programa para continuar) o <em>donde el programa muestra un resultado al usuario</em>.</li>
+<li>Las flechas dirigen el flujo de un paso al siguiente, indicando el <em>orden y el camino a seguir</em> en el proceso.</li>
+</ul>
+</li>
+<li>
+<p><strong>Restricciones en los diagramas de flujo</strong></p>
+<p>Para que los diagramas de flujo sean efectivos, es importante tener en cuenta algunas restricciones básicas:</p>
+<ul>
+<li><strong>Claridad</strong>: los diagramas deben ser claros y fáciles de entender. Cada símbolo debe estar correctamente etiquetado y ser coherente con su función.</li>
+<li><strong>Flujo único</strong>: solo debe haber una entrada y una salida de cada símbolo, salvo en el caso de los rombos (decisiones), donde puede haber dos salidas (una para “sí” y otra para “no”), pero no más de dos.</li>
+<li><strong>Estructura lógica:</strong> el diagrama debe seguir una estructura lógica, evitando confusiones con flechas que se crucen o símbolos mal posicionados.</li>
+<li><strong>Inicio y fin claros</strong>: siempre debe haber un símbolo de inicio y uno de fin. Sin estos dos elementos, el diagrama queda incompleto y es difícil de interpretar.</li>
+<li><strong>Comprobación</strong>: una vez que tengas diseñado el diagrama, piensa en el funcionamiento del proceso completo y sigue cada uno de los caminos establecidos para asegurarte de que recoge todas las posibles situaciones que podrían darse.</li>
+<li><strong>Bucles infinitos</strong>: se produce cuando el flujo de ejecución conduce a una repetición eterna. Debes diseñar el diagrama para que siempre acabe, evitando bucles infinitos.</li>
+</ul>
+</li>
+</ol>
+<figure style="align: center;">
+    <img src="./imagenes/diagrama2.png">
+</figure>
+
+<ol start="4">
+<li>
+<p><strong>Aplicaciones para diseñar diagramas de flujo</strong></p>
+<p>Para facilitar la creación de diagramas de flujo, existen muchas herramientas, pero yo te recomiendo estas:</p>
+<ul>
+<li><strong><a href="http://Draw.io">Draw.io</a></strong>: es una herramienta gratuita que se integra bien con Google Drive y ofrece amplias funcionalidades para diagramación.</li>
+<li><strong><a href="https://www.lucidchart.com/pages/es">Lucidchart</a></strong>: permite crear diagramas de flujo complejos de manera sencilla y colaborativa. Todo completamente online y basado en el navegador.</li>
+</ul>
+</li>
+</ol>
+<h3 id="pseudocodigo">Pseudocódigo<a class="headerlink" href="#pseudocodigo" title="Permanent link">&para;</a></h3>
+<p>El <strong>pseudocódigo</strong> es una forma de expresar un algoritmo usando frases y estructuras que simulan código de programación pero en un lenguaje más accesible y menos rígido. No está pensado para ser ejecutado por una máquina, sino para ser entendido por humanos.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>Inicio
+<span class="linenos" data-linenos="2 "></span>    Si está lloviendo entonces
+<span class="linenos" data-linenos="3 "></span>        Llevar paraguas
+<span class="linenos" data-linenos="4 "></span>    Sino
+<span class="linenos" data-linenos="5 "></span>        No llevar paraguas
+<span class="linenos" data-linenos="6 "></span>    Fin Si
+<span class="linenos" data-linenos="7 "></span>Fin
+</code></pre></div>
+<p>Este método es especialmente útil para explicar lógicas complejas antes de codificarlas en un lenguaje de programación específico.</p>
+<p>La utilidad de escribir nuestros algoritmos en pseudocódigo, es que <strong>no necesitamos conocer la sintaxis específica de un lenguaje de programación concreto</strong>, porque son tan expresivos que traducirlos a cualquier lenguaje de programación es muy rápido y sencillo.</p>
+<p>De esta manera, especialistas de distintos lenguajes de programación, pueden discutir sobre el código de un programa escrito en un lenguaje común que entienden todos.</p>
+<h2 id="pensamiento-computacional">Pensamiento computacional<a class="headerlink" href="#pensamiento-computacional" title="Permanent link">&para;</a></h2>
+<p>Llegados a este punto, tenemos todos los recursos necesarios para empezar a crear diagramas de flujo, pero todavía nuestro pensamiento computacional está un poco verde. Para entrenar un poco nuestra cabeza realizaremos el siguiente juego <a href="https://compute-it.toxicode.fr/?hour-of-code&amp;progression=python">Compute IT</a>: </p>
+<figure style="align: center;">
+    <img src="./imagenes/COMPUTE.png">
+    <figcaption> <a href="https://compute-it.toxicode.fr/?hour-of-code&progression=python" target="_blank">
+            COMPUTE IT
+        </a></figcaption>
+</figure>
+
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<h3 id="aa45-diagramas-de-flujo">📝 <strong>AA4.5</strong>  Diagramas de flujo<a class="headerlink" href="#aa45-diagramas-de-flujo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP1 / <abbr title="Analizar problemas de diferentes contextos y tipos mediante la abstracción y modelización de la realidad.">CE1.1</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Practica el diseño de diagramas de flujo expresando cada uno de estos algoritmos sencillos:</p>
+<ol start="0">
+<li>Calcular el área de un triángulo</li>
+</ol>
+<details class="success">
+<summary>Solución</summary>
+<p><figure style="align: center;">
+    <img src="./imagenes/diagrama3.png">
+    <figcaption> Diagrama cálculo área del un triángulo</figcaption>
+</figure></p>
+</details>
+<ol>
+<li>Decidir qué ropa ponerse. Diseña un diagrama de flujo que ayude a decidir qué tipo de ropa ponerse en función de la temperatura. Considera tres rangos: menos de 15°C (ropa de invierno), entre 15°C y 25°C (ropa de entretiempo), y más de 25°C (ropa de verano).</li>
+<li>Elegir un medio de transporte. Crea un diagrama de flujo para elegir un medio de transporte para ir al trabajo. Si está lloviendo, elige el coche; si no, si la distancia es menor de 3 km, ir a pie; de lo contrario, usar bicicleta.</li>
+<li>Calcular el total a pagar en una tienda. Elabora un diagrama de flujo para calcular el total a pagar por un cliente en una tienda. El cliente ingresa la cantidad de productos y el precio por unidad. El total a pagar es simplemente la cantidad multiplicada por el precio por unidad.</li>
+<li>Verificar si un número es par o impar. Diseña un diagrama de flujo que determine si un número entero es par o impar.</li>
+<li>Freír un huevo. Crea un diagrama de flujo para el proceso de freír un huevo. Considera pasos como elegir una sartén, calentar aceite, romper el huevo, el tiempo de cocinado, etc.</li>
+</ol>
+<p><strong>Entrega</strong>: exporta cada uno de los diagramas en formato imagen , pégalos en un Writer y súbelos a Aules.</p>
+<h3 id="aar46-refuerzo-diagramas-de-flujo">🔨 <strong>AAR4.6</strong> Refuerzo: Diagramas de flujo<a class="headerlink" href="#aar46-refuerzo-diagramas-de-flujo" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP1 / <abbr title="Analizar problemas de diferentes contextos y tipos mediante la abstracción y modelización de la realidad.">CE1.1</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<p>Practica el diseño de diagramas de flujo expresando cada uno de estos algoritmos sencillos:</p>
+<ol>
+<li>Conversión de grados Celsius a Fahrenheit. Este algoritmo pedirá al usuario una temperatura en grados Celsius, realizará la conversión a grados Fahrenheit usando la fórmula Fahrenheit = Celsius × 9/5 + 32 y mostrará el resultado en pantalla. </li>
+<li>Determinar si un número es par o impar. En este caso, el algoritmo solicita un número, lo divide entre dos y comprueba si el resto de la división entera es 0 o no. Dependiendo de este valor, se mostrará si el número es par o impar. </li>
+<li>Contador descendente. El algoritmo comienza pidiendo un número positivo al usuario, luego realiza un bucle que imprime los números desde ese valor hasta 0, decrementando en uno con cada iteración. </li>
+<li>Cálculo de la media de tres números. El usuario introduce tres números, el algoritmo suma esos números, calcula su media dividiendo la suma entre tres y muestra el resultado en pantalla.</li>
+</ol>
+<p><strong>Entrega</strong>: exporta cada uno de los diagramas en formato imagen , pégalos en un Writer y súbelos a Aules.</p>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="4_EticaSW.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.2 Sostenibilidad y ética en el desarrollo de software">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                4.2 Sostenibilidad y ética en el desarrollo de software
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="6_Lenguajes.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 4.4 Lenguajes de programación">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                4.4 Lenguajes de programación
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1717 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Python">
+      
+      
+      
+        <link rel="canonical" href="https://aznarel.github.io/PRSI/04_Prog/9_Python_II.html">
+      
+      
+        <link rel="prev" href="8_Python_I.html">
+      
+      
+        <link rel="next" href="10_Python_III.html">
+      
+      
+      <link rel="icon" href="../imagenes/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Python - Programación, redes y sistemas informáticos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#estructuras-de-control" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-header__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programación, redes y sistemas informáticos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="Elena" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programación, redes y sistemas informáticos" class="md-nav__button md-logo" aria-label="Programación, redes y sistemas informáticos" data-md-component="logo">
+      
+  <img src="../imagenes/logo.png" alt="logo">
+
+    </a>
+    Programación, redes y sistemas informáticos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    📋 Fundamentos del módulo
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            📋 Fundamentos del módulo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/Evaluacion.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_Fundamentos/PlantillaEntregaPracticas.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plantilla Entrega Prácticas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 1: Sistemas Informáticos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 1: Sistemas Informáticos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 UD3: Sistemas Operativos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            📂 UD3: Sistemas Operativos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/3_SoftwareI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 Sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/4_SoftwareII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 Evolución de los sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/5_SoftwareIII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 Tipos de sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/6_SoftwareVI.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 Instalación de sistemas operativos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/7_SoftwareVII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.5 Configuración de sistemas operativo Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_SO/8_SoftwareVIII.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.6 Configuración de sistemas operativo Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📂 Bloque 2: Desarrollo de software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📂 Bloque 2: Desarrollo de software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    📁 UD4: Fundamentos de programación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            📁 UD4: Fundamentos de programación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="3_Dise%C3%B1o.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 Industria del software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="4_EticaSW.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 Sostenibilidad y ética en el desarrollo de software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="5_Prog.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 Fundamentos de programación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="6_Lenguajes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.4 Lenguajes de programación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="7_Python.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.5 Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="8_Python_I.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.6 Elementos básicos de Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.7 Estructuras de control
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="9_Python_II.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.7 Estructuras de control
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estructuras-condicionales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructuras condicionales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructuras-repetitivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructuras repetitivas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructuras-de-salto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructuras de salto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actividades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aa413-estructuras-de-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 AA4.13 Estructuras de control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aa414-refuerzo-estructura-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 AA4.14 Refuerzo Estructura control
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10_Python_III.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.8 Estructuras de datos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!-- 
+
+https://lopegonzalez.es/eso-y-bachillerato/creacion-digital-y-pensamiento-computacional-1o-bachillerato/tema-1-introduccion-a-la-programacion/ 
+
+-->
+
+<h1 id="estructuras-de-control"><img alt="icono" src="imagenes/OIP.webp" width="55" /> Estructuras de control<a class="headerlink" href="#estructuras-de-control" title="Permanent link">&para;</a></h1>
+<p>Las estructuras de control nos <strong>permiten dirigir el flujo de ejecución del programa según ciertas condiciones</strong>. Incluyen las estructuras condicionales, repetitivas y de salto. Estas estructuras proporcionan la capacidad de tomar decisiones, repetir bloques de código y manejar situaciones excepcionales de manera organizada y eficiente.</p>
+<h2 id="estructuras-condicionales">Estructuras condicionales<a class="headerlink" href="#estructuras-condicionales" title="Permanent link">&para;</a></h2>
+<p>Las estructuras condicionales <strong>permiten ejecutar bloques de código solo si se cumplen ciertas condiciones</strong>. Python utiliza las palabras clave <strong><em>if</em></strong>, <strong><em>elif</em></strong> (abreviatura de «else if») y <strong><em>else</em></strong> para definir estas condiciones.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># variable</span>
+<span class="linenos" data-linenos="2 "></span>
+<span class="hll"><span class="linenos" data-linenos="3 "></span><span class="k">if</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>  <span class="c1"># estructura condicional </span>
+</span><span class="linenos" data-linenos="4 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">)</span>
+<span class="hll"><span class="linenos" data-linenos="5 "></span><span class="k">elif</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">:</span>
+</span><span class="linenos" data-linenos="6 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eres un adulto&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="7 "></span><span class="k">else</span><span class="p">:</span>
+<span class="linenos" data-linenos="8 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Jubilado! Enhorabuena&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>En la primera línea hemos creado una variable llamada <code>edad</code> y hemos almacenado el valor 20. 
+El resto del código es una estructura condicional que tiene dos condiciones. </p>
+<ul>
+<li>Primero (en la línea 3) decimos “¿es la edad menor que 18?”. </li>
+<li>Si lo es, se ejecutará el bloque de instrucciones que tiene en su interior (línea 4) y no se ejecutarán el resto de instrucciones (5, 6, 7 y 8). Pero si no lo es, el programa no ejecutará la línea 4, sino que saltará a la 5 y comprobará la segunda condición. “¿Es edad mayor o igual que 18 y menor que 65?”. Si lo es, el programa ejecutará el bloque de instrucciones que contiene (línea 6) y no se ejecutarán el resto de instrucciones (líneas 7 y 8). Pero ni tampoco lo es, el programa saltará a la línea 7 y ejecutará el bloque de instrucciones contenidos en el else (la línea 8).</li>
+</ul>
+<p>Como puedes ver, para indicar que un bloque de código está dentro de algún otro elemento, lo que hacemos es tabularlo, es decir, escribimos la instrucción después de pulsar la tecla tabulador:</p>
+<figure style="align: center;">
+    <img src="./imagenes/tab.png">
+    <figcaption>Tabulación del código</figcaption>
+</figure>
+
+<div class="admonition note">
+<p class="admonition-title">Espaciado y sangría</p>
+<p>Python utiliza la <strong>sangría</strong> para definir bloques de código, lo cual es extremadamente importante. <strong>Cada nivel de sangría (habitualmente cuatro espacios) indica un nuevo bloque</strong>. El espaciado adecuado es vital en Python, ya que define la estructura lógica del programa.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<span class="linenos" data-linenos="2 "></span>    <span class="k">if</span> <span class="n">nombre</span><span class="p">:</span>
+<span class="linenos" data-linenos="3 "></span>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="4 "></span>    <span class="k">else</span><span class="p">:</span>
+<span class="linenos" data-linenos="5 "></span>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Hola, Mundo!&quot;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<h2 id="estructuras-repetitivas">Estructuras repetitivas<a class="headerlink" href="#estructuras-repetitivas" title="Permanent link">&para;</a></h2>
+<p>Las estructuras repetitivas nos permiten <strong>repetir un bloque de código las veces que necesitemos</strong>. Popularmente se les conoce como <strong>bucles</strong>, y en Python tenemos dos: los bucles <strong><em>for</em></strong> y los bucles <strong><em>while</em></strong>.</p>
+<p>El bucle <strong><em>for</em></strong> se utiliza para repetir un bloque de código <strong>cuando sabemos exactamente cuantas veces queremos repetirlo</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="hll"><span class="linenos" data-linenos=" 1 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span><span class="linenos" data-linenos=" 2 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>  <span class="c1"># Muestra 0 1 2 3 4</span>
+<span class="linenos" data-linenos=" 3 "></span>
+<span class="hll"><span class="linenos" data-linenos=" 4 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">):</span>
+</span><span class="linenos" data-linenos=" 5 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 5 6</span>
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="hll"><span class="linenos" data-linenos=" 7 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+</span><span class="linenos" data-linenos=" 8 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 5 7 9</span>
+<span class="linenos" data-linenos=" 9 "></span>
+<span class="hll"><span class="linenos" data-linenos="10 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+</span><span class="linenos" data-linenos="11 "></span>  <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 9 7 5 3</span>
+</code></pre></div>
+<p>Como puedes ver por el fragmento de código anterior, <strong><em>range</em></strong> usa 1, 2 o 3 parámetros. Cuando usa uno, el bloque se repetirá el número de veces que se indique -1 (sin incluir al número). Cuando se usan dos parámetros, el primero indica el punto inicial y el segundo el punto final (sin incluir este último). Cuando se usan tres parámetros, los dos primeros funcionan igual y el tercero indica el salto de avance desde el primero al siguiente hasta llegar al último.</p>
+<p>EL bucle <strong><em>while</em></strong>, a diferencia del <strong><em>for</em></strong>, <strong>se repite siempre que una condición especificada sea verdadera</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="linenos" data-linenos="2 "></span>
+<span class="hll"><span class="linenos" data-linenos="3 "></span><span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+</span><span class="linenos" data-linenos="4 "></span>    <span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
+<span class="linenos" data-linenos="5 "></span>    <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+<h2 id="estructuras-de-salto">Estructuras de salto<a class="headerlink" href="#estructuras-de-salto" title="Permanent link">&para;</a></h2>
+<p>Permiten alterar el flujo normal de ejecución de las estructuras de control.</p>
+<p><strong><em>break</em></strong>, se utiliza para terminar el bucle actual de manera anticipada.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="linenos" data-linenos="2 "></span>    <span class="k">if</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+<span class="hll"><span class="linenos" data-linenos="3 "></span>        <span class="k">break</span>
+</span><span class="linenos" data-linenos="4 "></span>    <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 0 1 2 3 4</span>
+</code></pre></div>
+<p><strong><em>continue</em></strong>, se usa para omitir el resto del bloque de código en la iteración actual y pasar a la siguiente iteración del bucle.</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="linenos" data-linenos="2 "></span>    <span class="k">if</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+<span class="hll"><span class="linenos" data-linenos="3 "></span>        <span class="k">continue</span>
+</span><span class="linenos" data-linenos="4 "></span>    <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span> <span class="c1"># Muestra 0 1 2 3 4 6 7 8 9</span>
+</code></pre></div>
+<p>Ahora, ya tienes una base suficiente como para empezar a resolver algunos problemas sencillos. A continuación, encontrarás los enunciados de 20 problemas con sus respectivas soluciones. Si quieres aprender, te recomiendo que intentes resolver cada problema una y otra vez por ti mismo, y sólo acudas a la solución cuando llegues a un callejón sin salida. <strong>Aprender a programar no es rápido ni sencillo, sólo se logra con paciencia y tesón</strong>.</p>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<h3 id="aa413-estructuras-de-control">📝 <strong>AA4.13</strong> Estructuras de control<a class="headerlink" href="#aa413-estructuras-de-control" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP1 / <abbr title="Resolver problemas de mediana complejidad aplicando el pensamiento computacional de forma guiada.">CE1.2</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>
+<p>Escribe un programa que pida un número al usuario y determine si es positivo, negativo o cero.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="c1"># Solicitar un número al usuario</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="n">numero</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce un número: &quot;</span><span class="p">))</span>
+<span class="linenos" data-linenos=" 3 "></span>
+<span class="linenos" data-linenos=" 4 "></span><span class="c1"># Condición para evaluar si es positivo, negativo o cero</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos" data-linenos=" 6 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es positivo.&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos=" 7 "></span><span class="k">elif</span> <span class="n">numero</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos" data-linenos=" 8 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es negativo.&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos=" 9 "></span><span class="k">else</span><span class="p">:</span>
+<span class="linenos" data-linenos="10 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es cero.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número al usuario y determine si es par o impar.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="c1"># Solicitar un número al usuario</span>
+<span class="linenos" data-linenos="2 "></span><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce un número entero: &quot;</span><span class="p">))</span>
+<span class="linenos" data-linenos="3 "></span>
+<span class="linenos" data-linenos="4 "></span><span class="c1"># Verificar si el número es par o impar</span>
+<span class="linenos" data-linenos="5 "></span><span class="k">if</span> <span class="n">numero</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos" data-linenos="6 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es par.&quot;</span><span class="p">)</span>
+<span class="linenos" data-linenos="7 "></span><span class="k">else</span><span class="p">:</span>
+<span class="linenos" data-linenos="8 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es impar.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que calcule el factorial de un número introducido por el usuario usando un bucle <code>while</code>.      </p>
+<details class="success">
+<summary>Solución</summary>
+<p><div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="c1"># Solicitar un número entero</span>
+<span class="linenos" data-linenos=" 2 "></span><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce un número entero: &quot;</span><span class="p">))</span>
+<span class="linenos" data-linenos=" 3 "></span>
+<span class="linenos" data-linenos=" 4 "></span><span class="c1"># Inicializar el resultado del factorial</span>
+<span class="linenos" data-linenos=" 5 "></span><span class="n">factorial</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span><span class="c1"># Usar un bucle while para calcular el factorial</span>
+<span class="linenos" data-linenos=" 8 "></span><span class="k">while</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="linenos" data-linenos=" 9 "></span>    <span class="n">factorial</span> <span class="o">*=</span> <span class="n">numero</span>
+<span class="linenos" data-linenos="10 "></span>    <span class="n">numero</span> <span class="o">-=</span> <span class="mi">1</span>
+<span class="linenos" data-linenos="11 "></span>
+<span class="linenos" data-linenos="12 "></span><span class="c1"># Mostrar el resultado</span>
+<span class="linenos" data-linenos="13 "></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El factorial es: </span><span class="si">{</span><span class="n">factorial</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+Usamos un bucle <code>while</code> para multiplicar el número por los valores decrecientes hasta que llega a 1. El resultado se almacena en la variable factorial.</p>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida cinco números y cuente cuántos de ellos son mayores que 10.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span>    # Inicializar el contador
+<span class="linenos" data-linenos=" 3 "></span>    contador = 0
+<span class="linenos" data-linenos=" 4 "></span>
+<span class="linenos" data-linenos=" 5 "></span>    # Usar un bucle for para pedir 5 números
+<span class="linenos" data-linenos=" 6 "></span>    for i in range(5):
+<span class="linenos" data-linenos=" 7 "></span>        numero = float(input(f&quot;Introduce el número {i + 1}: &quot;))
+<span class="linenos" data-linenos=" 8 "></span>        if numero &gt; 10:
+<span class="linenos" data-linenos=" 9 "></span>            contador += 1
+<span class="linenos" data-linenos="10 "></span>
+<span class="linenos" data-linenos="11 "></span>    # Mostrar cuántos números fueron mayores que 10
+<span class="linenos" data-linenos="12 "></span>    print(f&quot;Has introducido {contador} números mayores que 10.&quot;)
+<span class="linenos" data-linenos="13 "></span>```
+<span class="linenos" data-linenos="14 "></span>
+<span class="linenos" data-linenos="15 "></span>Usamos un bucle `for` para pedir cinco números al usuario y un condicional if para aumentar el contador si el número es mayor que 10.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que calcule la suma de todos los números pares entre 1 y 100.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span># Inicializar la suma
+<span class="linenos" data-linenos=" 3 "></span>suma = 0
+<span class="linenos" data-linenos=" 4 "></span>
+<span class="linenos" data-linenos=" 5 "></span># Usar un bucle for para recorrer los números del 1 al 100
+<span class="linenos" data-linenos=" 6 "></span>for numero in range(1, 101):
+<span class="linenos" data-linenos=" 7 "></span>    if numero % 2 == 0:
+<span class="linenos" data-linenos=" 8 "></span>        suma += numero
+<span class="linenos" data-linenos=" 9 "></span>
+<span class="linenos" data-linenos="10 "></span># Mostrar el resultado
+<span class="linenos" data-linenos="11 "></span>print(f&quot;La suma de los números pares del 1 al 100 es: {suma}&quot;)
+<span class="linenos" data-linenos="12 "></span>```
+<span class="linenos" data-linenos="13 "></span>
+<span class="linenos" data-linenos="14 "></span>Usamos un bucle `for` para recorrer los números del 1 al 100 y un condicional if para sumar solo los números pares.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida tres números y determine cuál es el mayor.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span># Solicitar tres números al usuario
+<span class="linenos" data-linenos=" 3 "></span>numero1 = float(input(&quot;Introduce el primer número: &quot;))
+<span class="linenos" data-linenos=" 4 "></span>numero2 = float(input(&quot;Introduce el segundo número: &quot;))
+<span class="linenos" data-linenos=" 5 "></span>numero3 = float(input(&quot;Introduce el tercer número: &quot;))
+<span class="linenos" data-linenos=" 6 "></span>
+<span class="linenos" data-linenos=" 7 "></span># Determinar cuál es el mayor
+<span class="linenos" data-linenos=" 8 "></span>if numero1 &gt;= numero2 and numero1 &gt;= numero3:
+<span class="linenos" data-linenos=" 9 "></span>    mayor = numero1
+<span class="linenos" data-linenos="10 "></span>elif numero2 &gt;= numero1 and numero2 &gt;= numero3:
+<span class="linenos" data-linenos="11 "></span>    mayor = numero2
+<span class="linenos" data-linenos="12 "></span>else:
+<span class="linenos" data-linenos="13 "></span>    mayor = numero3
+<span class="linenos" data-linenos="14 "></span>
+<span class="linenos" data-linenos="15 "></span># Mostrar el mayor número
+<span class="linenos" data-linenos="16 "></span>print(f&quot;El número mayor es: {mayor}&quot;)
+<span class="linenos" data-linenos="17 "></span>```
+<span class="linenos" data-linenos="18 "></span>
+<span class="linenos" data-linenos="19 "></span>Usamos condiciones compuestas con operadores and para comparar los tres números y determinar cuál es el mayor.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida dos números y cuente cuántos múltiplos de 3 hay entre ellos.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span># Solicitar los dos números
+<span class="linenos" data-linenos=" 3 "></span>numero1 = int(input(&quot;Introduce el primer número: &quot;))
+<span class="linenos" data-linenos=" 4 "></span>numero2 = int(input(&quot;Introduce el segundo número: &quot;))
+<span class="linenos" data-linenos=" 5 "></span>
+<span class="linenos" data-linenos=" 6 "></span># Asegurar que el primer número es menor que el segundo
+<span class="linenos" data-linenos=" 7 "></span>if numero1 &gt; numero2:
+<span class="linenos" data-linenos=" 8 "></span>    numero1, numero2 = numero2, numero1
+<span class="linenos" data-linenos=" 9 "></span>
+<span class="linenos" data-linenos="10 "></span># Contar los múltiplos de 3
+<span class="linenos" data-linenos="11 "></span>contador = 0
+<span class="linenos" data-linenos="12 "></span>for numero in range(numero1, numero2 + 1):
+<span class="linenos" data-linenos="13 "></span>    if numero % 3 == 0:
+<span class="linenos" data-linenos="14 "></span>        contador += 1
+<span class="linenos" data-linenos="15 "></span>
+<span class="linenos" data-linenos="16 "></span># Mostrar el resultado
+<span class="linenos" data-linenos="17 "></span>print(f&quot;Hay {contador} múltiplos de 3 entre {numero1} y {numero2}.&quot;)
+<span class="linenos" data-linenos="18 "></span>```
+<span class="linenos" data-linenos="19 "></span>
+<span class="linenos" data-linenos="20 "></span>Primero aseguramos que el primer número es menor que el segundo intercambiando sus valores si es necesario. Luego, usamos un bucle `for` para contar los múltiplos de 3.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número entero y calcule la suma de sus dígitos.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>    ```python
+<span class="linenos" data-linenos=" 2 "></span>    # Solicitar un número entero al usuario
+<span class="linenos" data-linenos=" 3 "></span>    numero = input(&quot;Introduce un número entero: &quot;)
+<span class="linenos" data-linenos=" 4 "></span>
+<span class="linenos" data-linenos=" 5 "></span>    # Inicializar la suma
+<span class="linenos" data-linenos=" 6 "></span>    suma = 0
+<span class="linenos" data-linenos=" 7 "></span>
+<span class="linenos" data-linenos=" 8 "></span>    # Recorrer los dígitos y sumarlos
+<span class="linenos" data-linenos=" 9 "></span>    for digito in numero:
+<span class="linenos" data-linenos="10 "></span>        suma += int(digito)
+<span class="linenos" data-linenos="11 "></span>
+<span class="linenos" data-linenos="12 "></span>    # Mostrar la suma de los dígitos
+<span class="linenos" data-linenos="13 "></span>    print(f&quot;La suma de los dígitos es: {suma}&quot;)         
+<span class="linenos" data-linenos="14 "></span>    ```
+<span class="linenos" data-linenos="15 "></span>
+<span class="linenos" data-linenos="16 "></span>    Convertimos el número en una cadena para poder recorrer sus dígitos con un bucle `for`. Cada dígito se convierte de nuevo en entero para sumarlo
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que imprima los números del 1 al 10 en orden inverso.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>```python
+<span class="linenos" data-linenos="2 "></span># Usar un bucle for para imprimir los números en orden inverso
+<span class="linenos" data-linenos="3 "></span>for numero in range(10, 0, -1):
+<span class="linenos" data-linenos="4 "></span>    print(numero)   
+<span class="linenos" data-linenos="5 "></span>```
+<span class="linenos" data-linenos="6 "></span>
+<span class="linenos" data-linenos="7 "></span>Usamos un bucle `for` con un tercer parámetro negativo en la función `range()` para contar hacia atrás desde 10 hasta 1.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que muestre un menú con tres opciones: sumar dos números, restar dos números o multiplicar dos números. El programa debe repetirse hasta que el usuario elija salir.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span># Inicializar la opción seleccionada
+<span class="linenos" data-linenos=" 3 "></span>opcion = 0
+<span class="linenos" data-linenos=" 4 "></span>
+<span class="linenos" data-linenos=" 5 "></span># Repetir el menú hasta que el usuario elija salir
+<span class="linenos" data-linenos=" 6 "></span>while opcion != 4:
+<span class="linenos" data-linenos=" 7 "></span>    # Mostrar el menú
+<span class="linenos" data-linenos=" 8 "></span>    print(&quot;Menú de operaciones:&quot;)
+<span class="linenos" data-linenos=" 9 "></span>    print(&quot;1. Sumar dos números&quot;)
+<span class="linenos" data-linenos="10 "></span>    print(&quot;2. Restar dos números&quot;)
+<span class="linenos" data-linenos="11 "></span>    print(&quot;3. Multiplicar dos números&quot;)
+<span class="linenos" data-linenos="12 "></span>    print(&quot;4. Salir&quot;)
+<span class="linenos" data-linenos="13 "></span>
+<span class="linenos" data-linenos="14 "></span>    opcion = int(input(&quot;Elige una opción (1-4): &quot;))
+<span class="linenos" data-linenos="15 "></span>
+<span class="linenos" data-linenos="16 "></span>    if opcion == 1:
+<span class="linenos" data-linenos="17 "></span>        numero1 = float(input(&quot;Introduce el primer número: &quot;))
+<span class="linenos" data-linenos="18 "></span>        numero2 = float(input(&quot;Introduce el segundo número: &quot;))
+<span class="linenos" data-linenos="19 "></span>        print(f&quot;La suma es: {numero1 + numero2}&quot;)
+<span class="linenos" data-linenos="20 "></span>
+<span class="linenos" data-linenos="21 "></span>    elif opcion == 2:
+<span class="linenos" data-linenos="22 "></span>        numero1 = float(input(&quot;Introduce el primer número: &quot;))
+<span class="linenos" data-linenos="23 "></span>        numero2 = float(input(&quot;Introduce el segundo número: &quot;))
+<span class="linenos" data-linenos="24 "></span>        print(f&quot;La resta es: {numero1 - numero2}&quot;)
+<span class="linenos" data-linenos="25 "></span>
+<span class="linenos" data-linenos="26 "></span>    elif opcion == 3:
+<span class="linenos" data-linenos="27 "></span>        numero1 = float(input(&quot;Introduce el primer número: &quot;))
+<span class="linenos" data-linenos="28 "></span>        numero2 = float(input(&quot;Introduce el segundo número: &quot;))
+<span class="linenos" data-linenos="29 "></span>        print(f&quot;La multiplicación es: {numero1 * numero2}&quot;)
+<span class="linenos" data-linenos="30 "></span>
+<span class="linenos" data-linenos="31 "></span>    elif opcion == 4:
+<span class="linenos" data-linenos="32 "></span>        print(&quot;Saliendo del programa...&quot;)
+<span class="linenos" data-linenos="33 "></span>
+<span class="linenos" data-linenos="34 "></span>    else:
+<span class="linenos" data-linenos="35 "></span>        print(&quot;Opción no válida. Intenta de nuevo.&quot;)
+<span class="linenos" data-linenos="36 "></span>    ```
+<span class="linenos" data-linenos="37 "></span>
+<span class="linenos" data-linenos="38 "></span>    El programa utiliza un bucle `while` que repite un menú de opciones hasta que el usuario elija salir. Dependiendo de la opción seleccionada, se realizan distintas operaciones matemáticas básicas.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que permita al usuario adivinar un número secreto entre 1 y 10, con un máximo de 5 intentos. Si el usuario acierta el número, el programa debe finalizar con un mensaje de felicitación. Es obligatorio el uso de la instrucción <code>break</code>.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span># Definir el número secreto
+<span class="linenos" data-linenos=" 3 "></span>numero_secreto = 7
+<span class="linenos" data-linenos=" 4 "></span>
+<span class="linenos" data-linenos=" 5 "></span># Inicializar el número de intentos
+<span class="linenos" data-linenos=" 6 "></span>intentos = 0
+<span class="linenos" data-linenos=" 7 "></span>
+<span class="linenos" data-linenos=" 8 "></span># Usar un bucle para permitir hasta 5 intentos
+<span class="linenos" data-linenos=" 9 "></span>while intentos &lt; 5:
+<span class="linenos" data-linenos="10 "></span>    numero = int(input(&quot;Adivina el número (entre 1 y 10): &quot;))
+<span class="linenos" data-linenos="11 "></span>
+<span class="linenos" data-linenos="12 "></span>    if numero == numero_secreto:
+<span class="linenos" data-linenos="13 "></span>        print(&quot;¡Felicidades! Has adivinado el número.&quot;)
+<span class="linenos" data-linenos="14 "></span>        break  # Salir del bucle si el número es correcto
+<span class="linenos" data-linenos="15 "></span>    else:
+<span class="linenos" data-linenos="16 "></span>        print(&quot;Número incorrecto. Inténtalo de nuevo.&quot;)
+<span class="linenos" data-linenos="17 "></span>
+<span class="linenos" data-linenos="18 "></span>    intentos += 1
+<span class="linenos" data-linenos="19 "></span>
+<span class="linenos" data-linenos="20 "></span>if intentos == 5 and numero != numero_secreto:
+<span class="linenos" data-linenos="21 "></span>    print(&quot;Lo siento, has agotado todos los intentos.&quot;)
+<span class="linenos" data-linenos="22 "></span>```
+<span class="linenos" data-linenos="23 "></span>
+<span class="linenos" data-linenos="24 "></span>El bucle `while` permite que el usuario adivine el número secreto en un máximo de 5 intentos. Si el usuario acierta, usamos `break` para detener el bucle y terminar el programa. Si no, el bucle continúa hasta agotar los intentos.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que imprima los números impares entre 1 y 10, usando continue para omitir los números pares.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>```python
+<span class="linenos" data-linenos="2 "></span># Usar un bucle for para recorrer los números del 1 al 10
+<span class="linenos" data-linenos="3 "></span>for numero in range(1, 11):
+<span class="linenos" data-linenos="4 "></span>    if numero % 2 == 0:
+<span class="linenos" data-linenos="5 "></span>        continue  # Omitir el resto del bucle si el número es par
+<span class="linenos" data-linenos="6 "></span>    print(numero)
+<span class="linenos" data-linenos="7 "></span>```
+<span class="linenos" data-linenos="8 "></span>
+<span class="linenos" data-linenos="9 "></span>En este bucle `for`, usamos continue para saltar la iteración actual si el número es par. Esto asegura que solo se imprimen los números impares entre 1 y 10.
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que busque el primer número múltiplo de 7 que también sea mayor que 50 y menor que 100. El programa debe saltar los números que no son múltiplos de 7 y detenerse al encontrar el primero.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span>```python
+<span class="linenos" data-linenos=" 2 "></span># Usar un bucle for para recorrer los números del 51 al 100
+<span class="linenos" data-linenos=" 3 "></span>for numero in range(51, 101):
+<span class="linenos" data-linenos=" 4 "></span>    if numero % 7 != 0:
+<span class="linenos" data-linenos=" 5 "></span>        continue  # Saltar si el número no es múltiplo de 7
+<span class="linenos" data-linenos=" 6 "></span>    print(f&quot;El primer múltiplo de 7 mayor que 50 es: {numero}&quot;)
+<span class="linenos" data-linenos=" 7 "></span>    break  # Detener el bucle al encontrar el primer múltiplo de 7
+<span class="linenos" data-linenos=" 8 "></span>```
+<span class="linenos" data-linenos=" 9 "></span>
+<span class="linenos" data-linenos="10 "></span>El bucle `for` recorre los números desde 51 hasta 100. Si el número no es múltiplo de 7, continue salta a la siguiente iteración. Cuando encuentra un múltiplo de 7, lo imprime y luego usa break para detener el bucle, ya que no necesitamos buscar más números.
+</code></pre></div>
+</details>
+</li>
+</ol>
+<h3 id="aa414-refuerzo-estructura-control">🔨 <strong>AA4.14</strong>  Refuerzo Estructura control<a class="headerlink" href="#aa414-refuerzo-estructura-control" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong><em>(C.ESP1 / <abbr title="Resolver problemas de mediana complejidad aplicando el pensamiento computacional de forma guiada.">CE1.2</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
+</blockquote>
+<ol>
+<li>
+<p>Escribe un programa que pida al usuario su edad y determine si es mayor de edad o no</p>
+<details class="success">
+<summary>Solución</summary>
+<p><figure style="align: center;">
+    <img src="./imagenes/ej1.png">
+    <figcaption>Solución ejercicio</figcaption>
+</figure></p>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número al usuario y determine si es par o impar.</p>
+<details class="success">
+<summary>Solución</summary>
+<p><figure style="align: center;">
+    <img src="./imagenes/ej2.png">
+    <figcaption>Solución ejercicio</figcaption>
+</figure></p>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida dos números al usuario y muestre cuál es mayor.</p>
+<details class="success">
+<summary>Solución</summary>
+<p><figure style="align: center;">
+    <img src="./imagenes/ej3.png">
+    <figcaption>Solución ejercicio</figcaption>
+</figure></p>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número al usuario y determine si es positivo, negativo o cero.</p>
+<details class="success">
+<summary>Solución</summary>
+<p><figure style="align: center;">
+    <img src="./imagenes/ej4.png">
+    <figcaption>Solución ejercicio</figcaption>
+</figure></p>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número del 1 al 7 y muestre el día de la semana correspondiente.</p>
+<details class="success">
+<summary>Solución</summary>
+<p><figure style="align: center;">
+    <img src="./imagenes/ej5.png">
+    <figcaption>Solución ejercicio</figcaption>
+</figure></p>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida una temperatura en grados Celsius y la convierta a Fahrenheit.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej6.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida una palabra y la muestre al revés.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej7.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y muestre su tabla de multiplicar del 1 al 10.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej8.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y calcule la suma de todos los números desde 1 hasta ese número.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej9.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y calcule su factorial.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej10.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida una palabra y determine si es un palíndromo (se lee igual de izquierda a derecha que de derecha a izquierda).</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej11.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y muestre si es un número primo o no.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej12.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y muestre los números impares desde 1 hasta ese número.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej13.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida una frase y cuente cuántas vocales tiene.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej14.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y muestre todos los números pares desde 1 hasta ese número.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej15.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida una cantidad de segundos y la convierta a horas, minutos y segundos.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej16.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida una nota (0-10) y muestre si está suspenso (menos de 5), aprobado (5-6), bien (7-8), notable (9) o sobresaliente (10).</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej17.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida al usuario un número y muestre si es un número Armstrong (un número igual a la suma de sus propios dígitos cada uno elevado a la potencia de la cantidad de dígitos).</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej18.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida dos números y muestre su máximo común divisor (MCD).</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej19.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Escribe un programa que pida un número y muestre la secuencia de Fibonacci hasta ese número.</p>
+<details class="success">
+<summary>Solución</summary>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&lt;figure style=&quot;align: center;&quot;&gt;
+<span class="linenos" data-linenos="2 "></span>    &lt;img src=&quot;./imagenes/ej20.png&quot;&gt;
+<span class="linenos" data-linenos="3 "></span>    &lt;figcaption&gt;Solución ejercicio&lt;/figcaption&gt;
+<span class="linenos" data-linenos="4 "></span>&lt;/figure&gt;
+</code></pre></div>
+</details>
+</li>
+</ol>
+<!-- Competencias específicas / Criterios de evaluación  -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="8_Python_I.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 4.6 Elementos básicos de Python">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                4.6 Elementos básicos de Python
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="10_Python_III.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 4.8 Estructuras de datos">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                4.8 Estructuras de datos
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2025-2026 Elena Aznar Miralles - <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">Licencia CC BY-NC-SA</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<e.aznarmiralles@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+
+
+  
+
+
+<h4>Consentimiento de cookie</h4>
+<p>Esta página de apuntes utiliza cookies para reconocer las visitas, medir la efectividad de la documentación y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes. Con tu consentimiento, me ayudas a mejorar estos materiales.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.footer", "navigation.tracking", "toc.follow", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
