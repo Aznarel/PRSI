@@ -2209,11 +2209,13 @@ Usamos un bucle <code>while</code> para multiplicar el número por los valores d
 <p>El programa utiliza un bucle <code>while</code> que repite un menú de opciones hasta que el usuario elija salir. Dependiendo de la opción seleccionada, se realizan distintas operaciones matemáticas básicas.</p>
 </details>
 </li>
-<li>
-<p>Escribe un programa que permita al usuario adivinar un número secreto entre 1 y 10, con un máximo de 5 intentos. Si el usuario acierta el número, el programa debe finalizar con un mensaje de felicitación. Es obligatorio el uso de la instrucción <code>break</code>.</p>
-<details class="success">
-<summary>Solución</summary>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="c1"># Definir el número secreto</span>
+</ol>
+<!-- 
+1. Escribe un programa que permita al usuario adivinar un número secreto entre 1 y 10, con un máximo de 5 intentos. Si el usuario acierta el número, el programa debe finalizar con un mensaje de felicitación. Es obligatorio el uso de la instrucción `break`.
+
+    ??? success "Solución"
+
+        <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="c1"># Definir el número secreto</span>
 <span class="linenos" data-linenos=" 2 "></span><span class="n">numero_secreto</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="linenos" data-linenos=" 3 "></span>
 <span class="linenos" data-linenos=" 4 "></span><span class="c1"># Inicializar el número de intentos</span>
@@ -2234,37 +2236,38 @@ Usamos un bucle <code>while</code> para multiplicar el número por los valores d
 <span class="linenos" data-linenos="19 "></span><span class="k">if</span> <span class="n">intentos</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">numero</span> <span class="o">!=</span> <span class="n">numero_secreto</span><span class="p">:</span>
 <span class="linenos" data-linenos="20 "></span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lo siento, has agotado todos los intentos.&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p>El bucle <code>while</code> permite que el usuario adivine el número secreto en un máximo de 5 intentos. Si el usuario acierta, usamos <code>break</code> para detener el bucle y terminar el programa. Si no, el bucle continúa hasta agotar los intentos.</p>
-</details>
-</li>
-<li>
-<p>Escribe un programa que imprima los números impares entre 1 y 10, usando continue para omitir los números pares.</p>
-<details class="success">
-<summary>Solución</summary>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="c1"># Usar un bucle for para recorrer los números del 1 al 10</span>
+
+        El bucle `while` permite que el usuario adivine el número secreto en un máximo de 5 intentos. Si el usuario acierta, usamos `break` para detener el bucle y terminar el programa. Si no, el bucle continúa hasta agotar los intentos.
+
+1. Escribe un programa que imprima los números impares entre 1 y 10, usando continue para omitir los números pares.
+
+    ??? success "Solución"
+
+        <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="c1"># Usar un bucle for para recorrer los números del 1 al 10</span>
 <span class="linenos" data-linenos="2 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 <span class="linenos" data-linenos="3 "></span>    <span class="k">if</span> <span class="n">numero</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 <span class="linenos" data-linenos="4 "></span>        <span class="k">continue</span>  <span class="c1"># Omitir el resto del bucle si el número es par</span>
 <span class="linenos" data-linenos="5 "></span>    <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
 </code></pre></div>
-<p>En este bucle <code>for</code>, usamos continue para saltar la iteración actual si el número es par. Esto asegura que solo se imprimen los números impares entre 1 y 10.</p>
-</details>
-</li>
-<li>
-<p>Escribe un programa que busque el primer número múltiplo de 7 que también sea mayor que 50 y menor que 100. El programa debe saltar los números que no son múltiplos de 7 y detenerse al encontrar el primero.</p>
-<details class="success">
-<summary>Solución</summary>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="c1"># Usar un bucle for para recorrer los números del 51 al 100</span>
+
+        En este bucle `for`, usamos continue para saltar la iteración actual si el número es par. Esto asegura que solo se imprimen los números impares entre 1 y 10.
+
+
+1. Escribe un programa que busque el primer número múltiplo de 7 que también sea mayor que 50 y menor que 100. El programa debe saltar los números que no son múltiplos de 7 y detenerse al encontrar el primero.
+
+    ??? success "Solución"
+
+        <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="c1"># Usar un bucle for para recorrer los números del 51 al 100</span>
 <span class="linenos" data-linenos="2 "></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">51</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
 <span class="linenos" data-linenos="3 "></span>    <span class="k">if</span> <span class="n">numero</span> <span class="o">%</span> <span class="mi">7</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
 <span class="linenos" data-linenos="4 "></span>        <span class="k">continue</span>  <span class="c1"># Saltar si el número no es múltiplo de 7</span>
 <span class="linenos" data-linenos="5 "></span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El primer múltiplo de 7 mayor que 50 es: </span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="linenos" data-linenos="6 "></span>    <span class="k">break</span>  <span class="c1"># Detener el bucle al encontrar el primer múltiplo de 7</span>
 </code></pre></div>
-<p>El bucle <code>for</code> recorre los números desde 51 hasta 100. Si el número no es múltiplo de 7, continue salta a la siguiente iteración. Cuando encuentra un múltiplo de 7, lo imprime y luego usa break para detener el bucle, ya que no necesitamos buscar más números.</p>
-</details>
-</li>
-</ol>
+
+        El bucle `for` recorre los números desde 51 hasta 100. Si el número no es múltiplo de 7, continue salta a la siguiente iteración. Cuando encuentra un múltiplo de 7, lo imprime y luego usa break para detener el bucle, ya que no necesitamos buscar más números.
+ -->
+
 <h3 id="aar414-refuerzo-estructura-control">🔨 <strong>AAR4.14</strong>  Refuerzo Estructura control<a class="headerlink" href="#aar414-refuerzo-estructura-control" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p><strong><em>(C.ESP1 / <abbr title="Resolver problemas de mediana complejidad aplicando el pensamiento computacional de forma guiada.">CE1.2</abbr> / <abbr title="Instrumento de calificación mediante una escala de valores">IC1</abbr>-3p)</em></strong></p>
