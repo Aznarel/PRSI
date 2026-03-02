@@ -1411,6 +1411,10 @@ Esto garantiza la integridad de los datos y evita errores en la base de datos.</
 <li>Otra columna que apunte a la <strong>clave primaria de la segunda tabla</strong>.</li>
 <li>Para <strong>fijar la clave primaria</strong>, seleccionamos <strong>ambas columnas que apuntan a las tablas relacionadas</strong> y las definimos como <strong>clave primaria compuesta</strong>.  </li>
 </ul>
+<details class="note">
+<summary>¿Cómo seleccionar dos columnas?</summary>
+<p>Nos situamos en Películas , presionamos el botón SHIFT del teclado y a continuación la tecla ↓ Flecha abajo del teclado.</p>
+</details>
 <p>Esta tabla intermedia representa <strong>cada relación individual entre las dos tablas</strong>.  </p>
 <p><strong>Ejemplo:</strong> Tabla <code>Protagonistas</code> para relacionar <code>Peliculas</code> e <code>Interpretes</code>.</p>
 <figure style="align: center;">
@@ -1461,9 +1465,190 @@ Esto garantiza la integridad de los datos y evita errores en la base de datos.</
 <ol>
 <li>Abre la base de datos <code>BBDD_Pelicula</code></li>
 <li>Crea la tabla <code>Genero</code> siguiendo los pasos descritos en la unidad.</li>
-<li>Crea la tabla <code>Protagonistas</code> siguiendo los pasos descritos en la unidad.</li>
-<li>Crea las relaciones <strong>1 a N</strong> y <strong>N a N</strong>  siguiendo los pasos descritos en la unidad.</li>
-<li>Entrega en un Writer con una capturas de pantalla donde se demuestre los pasos para la realización de cada punto del ejercicio y el diagrama final de relaciones entre tablas.</li>
+<li>
+<p>Rellena la tabla con los siguientes géneros:</p>
+<table>
+<thead>
+<tr>
+<th>id_genero</th>
+<th>Género</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Ciencia-Ficción</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Aventuras</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Fantasía</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histórico</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Edita la tabla <code>película</code> y añade el nuevo campo</p>
+</li>
+<li>
+<p>Crea la tabla <code>Protagonistas</code> siguiendo los pasos descritos en la unidad.</p>
+</li>
+<li>Crea las relaciones <strong>1 a N</strong> siguiendo los pasos descritos en la unidad.</li>
+<li>
+<p>Actualiza la tabla  con sus correspondientes géneros:</p>
+<details class="note inline" open="open">
+<summary>Recuerda</summary>
+<p>Recuerda que la vinculación entre las tablas la has hecho a través del <strong>id</strong> que es de tipo integer por tanto <em>no has de escribir el nombre del género sino el número al que corresponde</em>.</p>
+</details>
+<table>
+<thead>
+<tr>
+<th>Película</th>
+<th>Género</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blade Runner</td>
+<td>Ciencia-Ficción</td>
+</tr>
+<tr>
+<td>La guerra de las galaxias</td>
+<td>Ciencia-Ficción</td>
+</tr>
+<tr>
+<td>Indiana Jones en busca del arca perdida</td>
+<td>Aventuras</td>
+</tr>
+<tr>
+<td>Million Dollar Baby</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>La comunidad del anillo</td>
+<td>Fantasía</td>
+</tr>
+<tr>
+<td>Belleza robada</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>Gladiator</td>
+<td>Histórico</td>
+</tr>
+<tr>
+<td>Rocky</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>Los lunes al sol</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>Mar adentro</td>
+<td>Drama</td>
+</tr>
+<tr>
+<td>Big Fish</td>
+<td>Fantasía</td>
+</tr>
+<tr>
+<td>Gattaca</td>
+<td>Ciencia-Ficción</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Crea las relaciones <strong>N a N</strong>  siguiendo los pasos descritos en la unidad.</p>
+</li>
+<li>
+<p>Rellena la nueva tabla:</p>
+<details class="note inline" open="open">
+<summary>Recuerda</summary>
+<p>Recuerda que la vinculación entre las tablas la has hecho a través del <strong>id</strong> que es de tipo integer por tanto <em>no has de escribir el nombre del interprete sino el número al que corresponde</em>.</p>
+</details>
+<table>
+<thead>
+<tr>
+<th>Película</th>
+<th>Protagonista</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blade Runner</td>
+<td>Harrison Ford</td>
+</tr>
+<tr>
+<td>La guerra de las galaxias</td>
+<td>Harrison Ford</td>
+</tr>
+<tr>
+<td>Indiana Jones en busca del arca perdida</td>
+<td>Harrison Ford</td>
+</tr>
+<tr>
+<td>Million Dollar Baby</td>
+<td>Clint Eastwood</td>
+</tr>
+<tr>
+<td>Million Dollar Baby</td>
+<td>Hilary Swank</td>
+</tr>
+<tr>
+<td>La comunidad del anillo</td>
+<td>Elijah Wood</td>
+</tr>
+<tr>
+<td>Belleza robada</td>
+<td>Liv Tyler</td>
+</tr>
+<tr>
+<td>Gladiator</td>
+<td>Russell Crowe</td>
+</tr>
+<tr>
+<td>Rocky</td>
+<td>Sylvester Stallone</td>
+</tr>
+<tr>
+<td>Los lunes al sol</td>
+<td>Javier Bardem</td>
+</tr>
+<tr>
+<td>Mar adentro</td>
+<td>Javier Bardem</td>
+</tr>
+<tr>
+<td>Big Fish</td>
+<td>Ewan McGregor</td>
+</tr>
+<tr>
+<td>Gattaca</td>
+<td>Thurman Uma</td>
+</tr>
+<tr>
+<td>Gattaca</td>
+<td>Ethan Hawke</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Entrega en un Writer con una capturas de pantalla donde se demuestre los pasos para la realización de cada punto del ejercicio y el diagrama final de relaciones entre tablas.</p>
+</li>
 </ol>
 </details>
 <details class="question">
